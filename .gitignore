@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.log
+.ipynb_checkpoints/
+.env
+.env.*
+.DS_Store
+.vscode/
+.idea/
+*.swp
+pytest.ini
