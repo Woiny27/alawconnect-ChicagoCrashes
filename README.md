@@ -13,7 +13,7 @@
 
 ## 🌍 Live Demo
 
-👉 https://chicago-crashes-api-xyz.run.app/docs
+👉 https://your-service.run.app/docs
 
 ---
 
