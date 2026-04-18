@@ -189,6 +189,8 @@ if data_source == "Chicago Open Data":
                 map_data = df[['latitude', 'longitude']].dropna()
                 map_data.columns = ['lat', 'lon']
                 
+                st.write("Map data types:", map_data.dtypes)
+                
                 st.map(map_data, zoom=10)
                 
                 st.write(f"📍 {len(map_data)} crash locations plotted")
