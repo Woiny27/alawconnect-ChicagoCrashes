@@ -193,6 +193,9 @@ if data_source == "Chicago Open Data":
                 map_data["lat"] = pd.to_numeric(map_data["lat"], errors="coerce")
                 map_data["lon"] = pd.to_numeric(map_data["lon"], errors="coerce")
                 
+                # Remove rows with invalid coordinates
+                map_data = map_data.dropna(subset=["lat", "lon"])
+                
                 st.write("Map data types:", map_data.dtypes)
                 
                 st.map(map_data, zoom=10)
