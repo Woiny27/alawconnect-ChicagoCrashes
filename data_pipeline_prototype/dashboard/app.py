@@ -27,6 +27,10 @@ data_source = st.sidebar.radio(
 API_BASE_URL = "http://localhost:8000"
 CHICAGO_API = "https://data.cityofchicago.org/resource/85ca-t3if.json"
 
+# Map column names
+latitude = "lat"
+longitude = "lon"
+
 # Helper functions
 @st.cache_data
 def fetch_chicago_crashes(limit: int = 50):
@@ -187,14 +191,14 @@ if data_source == "Chicago Open Data":
             if 'latitude' in df.columns and 'longitude' in df.columns:
                 # Prepare map data
                 map_data = df[['latitude', 'longitude']].dropna()
-                map_data.columns = ['lat', 'lon']
+                map_data.columns = [latitude, longitude]
                 
                 # Convert to numeric types
-                map_data["lat"] = pd.to_numeric(map_data["lat"], errors="coerce")
-                map_data["lon"] = pd.to_numeric(map_data["lon"], errors="coerce")
+                map_data[latitude] = pd.to_numeric(map_data[latitude], errors="coerce")
+                map_data[longitude] = pd.to_numeric(map_data[longitude], errors="coerce")
                 
                 # Remove rows with invalid coordinates
-                map_data = map_data.dropna(subset=["lat", "lon"])
+                map_data = map_data.dropna(subset=[latitude, longitude])
                 
                 st.write("Map data types:", map_data.dtypes)
                 
