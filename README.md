@@ -1,23 +1,65 @@
-# # Python Data Pipeline Prototype
+# 🚗 ChicagoCrashes Data Pipeline + AI Risk System
 
-## Overview
-This project demonstrates a modular, provider-based data ingestion pipeline designed for legacy-style systems.
-
-It fetches earthquake data from USGS, normalizes it, deduplicates records, and stores outputs in JSON and CSV formats.
-
----
-
-## Features
-- Provider-based architecture
-- Extensible data sources
-- Data normalization layer
-- Deduplication logic
-- Logging system
-- JSON + CSV output
+[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-API-green.svg)](https://fastapi.tiangolo.com/)
+[![Docker](https://img.shields.io/badge/Docker-Containerized-blue.svg)](https://www.docker.com/)
+[![Deploy](https://img.shields.io/badge/Deploy-Docker%20Ready-2496ED.svg)]()
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue.svg)](https://www.postgresql.org/)
+[![SQLite](https://img.shields.io/badge/SQLite-Lightweight-orange.svg)](https://www.sqlite.org/)
+[![CI](https://img.shields.io/badge/CI-GitHub_Actions-black.svg)](https://github.com/features/actions)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
 
-## Setup
+## 🌍 Live Demo
+
+👉 https://chicago-crashes-api-xyz.run.app/docs
+
+---
+
+## 🧠 Overview
+
+A modular **data pipeline + AI-powered risk detection system** built with FastAPI, featuring plugin-based ingestion, ETL processing, and generative AI explanations for anomaly detection.
+
+---
+
+## 🧭 Architecture Flow
+
+External Data -> Provider -> ETL Pipeline -> Risk Engine -> GenAI Explanation -> API Response -> Storage
+
+---
+
+## 🚀 Deployment Flow
+
+```
+GitHub Repo
+   ↓
+GitHub Actions
+   ↓
+Docker Build
+   ↓
+Google Cloud Run
+   ↓
+Public API URL
+```
+
+---
+
+## ⚙️ Key Features
+
+- 🔌 Plugin-based provider architecture (extensible ingestion system)
+- ⚡ Async data ingestion with retry + exponential backoff
+- 🔄 ETL pipeline (collect → transform → store)
+- 🗄 SQLite + PostgreSQL support
+- 🌐 FastAPI REST service with Swagger documentation
+- 🐳 Fully containerized (Docker + Docker Compose)
+- 🧪 Pytest-based test suite
+- 🔁 CI/CD ready (GitHub Actions)
+
+---
+
+## 🚀 Quick Start
 
 ```bash
-pip install -r requirements.txtalawconnect-ChicagoCrashes
+docker compose up --build
+```
