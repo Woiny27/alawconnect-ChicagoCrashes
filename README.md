@@ -45,6 +45,17 @@ Public API URL
 
 ---
 
+## 🔄 Automated Deployment Pipeline
+
+1. **GitHub detects push** — Any commit to `main` or manual trigger initiates the workflow
+2. **GitHub Actions starts pipeline** — Workflow runs on Ubuntu runners with GCP authentication
+3. **Docker image is built** — FastAPI app is containerized from source in `data_pipeline_prototype/`
+4. **Image is deployed to Cloud Run** — Service is updated with the new container
+5. **Old version is replaced** — Traffic automatically routes to the new deployment
+6. **New API is live** — Swagger docs available at the public Cloud Run URL
+
+---
+
 ## ⚙️ Key Features
 
 - 🔌 Plugin-based provider architecture (extensible ingestion system)
