@@ -25,7 +25,7 @@ A modular **data pipeline + AI-powered risk detection system** built with FastAP
 
 ## 🧭 Architecture Flow
 
-External Data -> Provider -> ETL Pipeline -> Risk Engine -> GenAI Explanation -> API Response -> Storage
+External API → Provider → ETL Pipeline → Risk Engine → GenAI Explanation → API Response
 
 ---
 
