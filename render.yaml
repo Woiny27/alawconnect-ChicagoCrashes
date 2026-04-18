@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: data-pipeline-api
+    env: docker
+    region: oregon
+    plan: free
+    branch: main
+    
+    # Build configuration
+    dockerfilePath: ./data_pipeline_prototype/Dockerfile
+    
+    # Environment variables
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: HOST
+        value: 0.0.0.0
+    
+    # Auto-deploy on main branch push
+    autoDeploy: true
+    
+    # Health check
+    healthCheckPath: /health
+    healthCheckInterval: 30
