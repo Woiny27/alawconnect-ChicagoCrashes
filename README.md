@@ -13,11 +13,9 @@
 
 ## 🌍 Live Demo
 
-👉 Local Demo: http://localhost:8000/docs
-
-👉 Cloud Run (after deploy): https://data-pipeline-api-xxxxx-uc.a.run.app/docs
-
-👉 Render (after deploy): https://your-app.onrender.com/docs
+- 🚀 API Docs: https://your-live-url/docs  
+- ❤️ Health Check: https://your-live-url/health  
+- ⚠️ Risk Engine: POST /risk/analyze/usgs  
 
 ---
 
