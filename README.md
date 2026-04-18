@@ -13,7 +13,11 @@
 
 ## 🌍 Live Demo
 
-👉 https://your-service.run.app/docs
+👉 Local Demo: http://localhost:8000/docs
+
+👉 Cloud Run (after deploy): https://data-pipeline-api-xxxxx-uc.a.run.app/docs
+
+👉 Render (after deploy): https://your-app.onrender.com/docs
 
 ---
 
