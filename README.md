@@ -74,3 +74,58 @@ Public API URL
 ```bash
 docker compose up --build
 ```
+
+---
+
+## 📦 Deployment
+
+### **Option 1: Google Cloud Run (with GitHub Actions)**
+
+Prerequisites:
+- Google Cloud project with Cloud Run API enabled
+- Service account with `roles/run.admin` and related permissions
+- `GCP_SA_KEY` secret stored in GitHub Settings → Secrets and Variables → Actions
+
+The GitHub Actions workflow (`.github/workflows/deploy.yml`) automatically:
+1. Builds a Docker image
+2. Pushes to Google Artifact Registry
+3. Deploys to Cloud Run
+4. Outputs the public URL
+
+Push to `main` branch to trigger deployment.
+
+**Live API:** `https://data-pipeline-api-xxxxx.run.app`
+
+---
+
+### **Option 2: Render (1-Click Deploy)**
+
+The repository includes `render.yaml` for instant Render deployment.
+
+1. **Fork or connect this repository** to Render
+2. **Click "Deploy"** — Render automatically detects `render.yaml`
+3. **Service starts** on Render's free tier
+
+**Features:**
+- Auto-deploys on git push to `main`
+- Health checks enabled (`/health`)
+- Environment ready (no secrets needed for basic setup)
+
+**Live API:** `https://your-app.onrender.com`
+- Swagger Docs: `https://your-app.onrender.com/docs`
+- Risk Analysis: `https://your-app.onrender.com/risk/analyze/usgs`
+- Health Check: `https://your-app.onrender.com/health`
+
+---
+
+## 📊 API Endpoints
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/health` | GET | Health check |
+| `/docs` | GET | Swagger UI |
+| `/providers` | GET | List available data providers |
+| `/run/{provider_name}` | POST | Execute pipeline with specific provider |
+| `/risk/analyze/usgs` | POST | AI risk analysis for earthquake data |
+
+---
