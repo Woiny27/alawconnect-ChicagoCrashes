@@ -38,14 +38,13 @@ Google Cloud Run
 Public API URL
  Automated Deployment Pipeline
 
-1. **GitHub detects push** — Any commit to `main` or manual trigger initiates the workflow
-2. **GitHub Actions starts pipeline** — Workflow runs on Ubuntu runners with GCP authentication
-3. **Docker image is built** — FastAPI app is containerized from source in `data_pipeline_prototype/`
-4. **Image is deployed to Cloud Run** — Service is updated with the new container
-5. **Old version is replaced** — Traffic automatically routes to the new deployment
-6. **New API is live** — Swagger docs available at the public Cloud Run URL
+1. GitHub detects push — Any commit to `main` or manual trigger initiates the workflow
+2. GitHub Actions starts pipeline — Workflow runs on Ubuntu runners with GCP authentication
+3. Docker image is built — FastAPI app is containerized from source in `data_pipeline_prototype/`
+4. Image is deployed to Cloud Run — Service is updated with the new container
+5. Old version is replaced — Traffic automatically routes to the new deployment
+6. New API is live — Swagger docs available at the public Cloud Run URL
 
----
  Key Features
 
 Plugin-based provider architecture (extensible ingestion system)
@@ -57,7 +56,7 @@ SQLite + PostgreSQL support
  Pytest-based test suite
  CI/CD ready (GitHub Actions)
 
----
+
  Quick Start
 
 ```bash
@@ -86,16 +85,16 @@ Option 2: Render (1-Click Deploy)**
 
 The repository includes `render.yaml` for instant Render deployment.
 
-1. **Fork or connect this repository** to Render
-2. **Click "Deploy"** — Render automatically detects `render.yaml`
-3. **Service starts** on Render's free tier
+1. Fork or connect this repository to Render
+2. Click "Deploy" — Render automatically detects `render.yaml`
+3. Service starts on Render's free tier
 
-**Features:**
+Features:
 - Auto-deploys on git push to `main`
 - Health checks enabled (`/health`)
 - Environment ready (no secrets needed for basic setup)
 
-**Live API:** `https://your-app.onrender.com`
+Live API: `https://your-app.onrender.com`
 - Swagger Docs: `https://your-app.onrender.com/docs`
 - Risk Analysis: `https://your-app.onrender.com/risk/analyze/usgs`
 - Health Check: `https://your-app.onrender.com/health`
