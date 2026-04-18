@@ -11,29 +11,22 @@
 
 ---
 
-## 🌍 Live Demo
+ Live Demo
 
-- 🚀 API Docs: https://your-live-url/docs  
-- ❤️ Health Check: https://your-live-url/health  
-- ⚠️ Risk Engine: POST /risk/analyze/usgs  
+ API Docs: https://your-live-url/docs  
+Health Check: https://your-live-url/health  
+ Risk Engine: POST /risk/analyze/usgs  
 
----
-
-## 🧠 Overview
+Overview
 
 A modular **data pipeline + AI-powered risk detection system** built with FastAPI, featuring plugin-based ingestion, ETL processing, and generative AI explanations for anomaly detection.
 
----
-
-## 🧭 Architecture Flow
+Architecture Flow
 
 External API → Provider → ETL Pipeline → Risk Engine → GenAI Explanation → API Response
+Deployment Flow
 
----
 
-## 🚀 Deployment Flow
-
-```
 GitHub Repo
    ↓
 GitHub Actions
@@ -43,11 +36,7 @@ Docker Build
 Google Cloud Run
    ↓
 Public API URL
-```
-
----
-
-## 🔄 Automated Deployment Pipeline
+ Automated Deployment Pipeline
 
 1. **GitHub detects push** — Any commit to `main` or manual trigger initiates the workflow
 2. **GitHub Actions starts pipeline** — Workflow runs on Ubuntu runners with GCP authentication
@@ -57,31 +46,26 @@ Public API URL
 6. **New API is live** — Swagger docs available at the public Cloud Run URL
 
 ---
+ Key Features
 
-## ⚙️ Key Features
-
-- 🔌 Plugin-based provider architecture (extensible ingestion system)
-- ⚡ Async data ingestion with retry + exponential backoff
-- 🔄 ETL pipeline (collect → transform → store)
-- 🗄 SQLite + PostgreSQL support
-- 🌐 FastAPI REST service with Swagger documentation
-- 🐳 Fully containerized (Docker + Docker Compose)
-- 🧪 Pytest-based test suite
-- 🔁 CI/CD ready (GitHub Actions)
+Plugin-based provider architecture (extensible ingestion system)
+Async data ingestion with retry + exponential backoff
+ETL pipeline (collect → transform → store)
+SQLite + PostgreSQL support
+ FastAPI REST service with Swagger documentation
+ Fully containerized (Docker + Docker Compose)
+ Pytest-based test suite
+ CI/CD ready (GitHub Actions)
 
 ---
-
-## 🚀 Quick Start
+ Quick Start
 
 ```bash
 docker compose up --build
-```
 
----
+Deployment
 
-## 📦 Deployment
-
-### **Option 1: Google Cloud Run (with GitHub Actions)**
+Option 1: Google Cloud Run (with GitHub Actions)**
 
 Prerequisites:
 - Google Cloud project with Cloud Run API enabled
@@ -96,11 +80,9 @@ The GitHub Actions workflow (`.github/workflows/deploy.yml`) automatically:
 
 Push to `main` branch to trigger deployment.
 
-**Live API:** `https://data-pipeline-api-xxxxx.run.app`
+Live API: `https://data-pipeline-api-xxxxx.run.app`
 
----
-
-### **Option 2: Render (1-Click Deploy)**
+Option 2: Render (1-Click Deploy)**
 
 The repository includes `render.yaml` for instant Render deployment.
 
@@ -118,9 +100,7 @@ The repository includes `render.yaml` for instant Render deployment.
 - Risk Analysis: `https://your-app.onrender.com/risk/analyze/usgs`
 - Health Check: `https://your-app.onrender.com/health`
 
----
-
-## 📊 API Endpoints
+API Endpoints
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
