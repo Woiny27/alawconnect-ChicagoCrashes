@@ -1,0 +1,7 @@
+requests
+pandas
+fastapi
+httpx
+uvicorn
+pytest
+python-dotenv
