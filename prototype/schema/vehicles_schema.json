@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Chicago Vehicles Schema",
+  "description": "Schema for Chicago traffic crash vehicle records from the City of Chicago Open Data Portal",
+  "type": "object",
+  "properties": {
+    "crash_unit_id": {
+      "type": "string",
+      "description": "A unique identifier for each vehicle record"
+    },
+    "crash_record_id": {
+      "type": "string",
+      "description": "Links to the same crash in the Crashes dataset"
+    },
+    "crash_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date and time of crash as entered by the reporting officer"
+    },
+    "unit_no": {
+      "type": "string",
+      "description": "A unique ID for each unit within a specific crash report"
+    },
+    "unit_type": {
+      "type": "string",
+      "description": "The type of unit (vehicle, motorcycle, etc.)"
+    },
+    "num_passengers": {
+      "type": "integer",
+      "description": "Number of passengers in the vehicle (driver not included)"
+    },
+    "vehicle_id": {
+      "type": "string",
+      "description": "Vehicle identifier"
+    },
+    "cmrc_veh_i": {
+      "type": "string",
+      "description": "Commercial vehicle indicator"
+    },
+    "make": {
+      "type": "string",
+      "description": "The make (brand) of the vehicle"
+    },
+    "model": {
+      "type": "string",
+      "description": "The model of the vehicle"
+    },
+    "year": {
+      "type": "integer",
+      "description": "Year of the vehicle"
+    },
+    "color": {
+      "type": "string",
+      "description": "Color of the vehicle"
+    },
+    "state": {
+      "type": "string",
+      "description": "State of vehicle registration"
+    },
+    "license_plate_number": {
+      "type": "string",
+      "description": "License plate number"
+    },
+    "vehicle_type": {
+      "type": "string",
+      "description": "Type of vehicle (automobile, motorcycle, etc.)"
+    },
+    "occupant_count": {
+      "type": "integer",
+      "description": "Number of occupants including driver"
+    },
+    "damage_description": {
+      "type": "string",
+      "description": "Description of damage to vehicle"
+    },
+    "first_contact_point": {
+      "type": "string",
+      "description": "First point of contact on vehicle"
+    },
+    "contrib_cause": {
+      "type": "string",
+      "description": "Contributing cause for this vehicle"
+    }
+  },
+  "required": [
+    "crash_unit_id",
+    "crash_record_id",
+    "unit_no"
+  ]
+}

@@ -68,3 +68,13 @@ class CustomProvider(BaseProvider):
         # Implementation
         pass
 ```
+
+## Contacts Data
+
+Real contact numbers (phone numbers, names, addresses) are stored in a private Google Sheet:
+
+- Chicago Crashes with Contacts: https://docs.google.com/spreadsheets/d/1HeSWYoEPxpE9bxrfMF_YMqCYYEm1QYNnwmTN9ljkgGg/edit?usp=drivesdk
+
+Do not upload the raw sheet to GitHub due to privacy requirements.
+
+The prototype can merge public crash data with the local contacts file using the `rd` column as the join key.

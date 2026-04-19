@@ -1,0 +1,72 @@
+name,fieldName,dataTypeName,description
+CRASH_UNIT_ID,crash_unit_id,number,A unique identifier for each vehicle record.
+CRASH_RECORD_ID,crash_record_id,text,This number can be used to link to the same crash in the Crashes and People datasets. This number also serves as a unique ID in the Crashes dataset.
+CRASH_DATE,crash_date,calendar_date,Date and time of crash as entered by the reporting officer
+UNIT_NO,unit_no,number,A unique ID for each unit within a specific crash report.
+UNIT_TYPE,unit_type,text,The type of unit
+NUM_PASSENGERS,num_passengers,number,Number of passengers in the vehicle. The driver is not included. More information on passengers is in the People dataset.
+VEHICLE_ID,vehicle_id,number,
+CMRC_VEH_I,cmrc_veh_i,text,
+MAKE,make,text,"The make (brand) of the vehicle, if relevant"
+MODEL,model,text,"The model of the vehicle, if relevant"
+LIC_PLATE_STATE,lic_plate_state,text,"The state issuing the license plate of the vehicle, if relevant"
+VEHICLE_YEAR,vehicle_year,number,"The model year of the vehicle, if relevant"
+VEHICLE_DEFECT,vehicle_defect,text,
+VEHICLE_TYPE,vehicle_type,text,"The type of vehicle, if relevant"
+VEHICLE_USE,vehicle_use,text,"The normal use of the vehicle, if relevant"
+TRAVEL_DIRECTION,travel_direction,text,"The direction in which the unit was traveling prior to the crash, as determined by the reporting officer"
+MANEUVER,maneuver,text,"The action the unit was taking prior to the crash, as determined by the reporting officer"
+TOWED_I,towed_i,text,Indicator of whether the vehicle was towed
+FIRE_I,fire_i,text,
+OCCUPANT_CNT,occupant_cnt,number,"The number of people in the unit, as determined by the reporting officer"
+EXCEED_SPEED_LIMIT_I,exceed_speed_limit_i,text,"Indicator of whether the unit was speeding, as determined by the reporting officer"
+TOWED_BY,towed_by,text,"Entity that towed the unit, if relevant"
+TOWED_TO,towed_to,text,"Location to which the unit was towed, if relevant"
+AREA_00_I,area_00_i,text,
+AREA_01_I,area_01_i,text,
+AREA_02_I,area_02_i,text,
+AREA_03_I,area_03_i,text,
+AREA_04_I,area_04_i,text,
+AREA_05_I,area_05_i,text,
+AREA_06_I,area_06_i,text,
+AREA_07_I,area_07_i,text,
+AREA_08_I,area_08_i,text,
+AREA_09_I,area_09_i,text,
+AREA_10_I,area_10_i,text,
+AREA_11_I,area_11_i,text,
+AREA_12_I,area_12_i,text,
+AREA_99_I,area_99_i,text,
+FIRST_CONTACT_POINT,first_contact_point,text,
+CMV_ID,cmv_id,number,
+USDOT_NO,usdot_no,text,
+CCMC_NO,ccmc_no,text,
+ILCC_NO,ilcc_no,text,
+COMMERCIAL_SRC,commercial_src,text,
+GVWR,gvwr,text,
+CARRIER_NAME,carrier_name,text,
+CARRIER_STATE,carrier_state,text,
+CARRIER_CITY,carrier_city,text,
+HAZMAT_PLACARDS_I,hazmat_placards_i,text,
+HAZMAT_NAME,hazmat_name,text,
+UN_NO,un_no,text,
+HAZMAT_PRESENT_I,hazmat_present_i,text,
+HAZMAT_REPORT_I,hazmat_report_i,text,
+HAZMAT_REPORT_NO,hazmat_report_no,text,
+MCS_REPORT_I,mcs_report_i,text,
+MCS_REPORT_NO,mcs_report_no,text,
+HAZMAT_VIO_CAUSE_CRASH_I,hazmat_vio_cause_crash_i,text,
+MCS_VIO_CAUSE_CRASH_I,mcs_vio_cause_crash_i,text,
+IDOT_PERMIT_NO,idot_permit_no,text,
+WIDE_LOAD_I,wide_load_i,text,
+TRAILER1_WIDTH,trailer1_width,text,
+TRAILER2_WIDTH,trailer2_width,text,
+TRAILER1_LENGTH,trailer1_length,number,
+TRAILER2_LENGTH,trailer2_length,number,
+TOTAL_VEHICLE_LENGTH,total_vehicle_length,number,
+AXLE_CNT,axle_cnt,number,
+VEHICLE_CONFIG,vehicle_config,text,
+CARGO_BODY_TYPE,cargo_body_type,text,
+LOAD_TYPE,load_type,text,
+HAZMAT_OUT_OF_SERVICE_I,hazmat_out_of_service_i,text,
+MCS_OUT_OF_SERVICE_I,mcs_out_of_service_i,text,
+HAZMAT_CLASS,hazmat_class,text,

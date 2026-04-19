@@ -1,0 +1,52 @@
+name,fieldName,dataTypeName,description
+CRASH_RECORD_ID,crash_record_id,text,This number can be used to link to the same crash in the Vehicles and People datasets. This number also serves as a unique ID in this dataset.
+CRASH_DATE_EST_I,crash_date_est_i,text,Crash date estimated by desk officer or reporting party (only used in cases where crash is reported at police station days after the crash)
+CRASH_DATE,crash_date,calendar_date,Date and time of crash as entered by the reporting officer
+POSTED_SPEED_LIMIT,posted_speed_limit,number,"Posted speed limit, as determined by reporting officer"
+TRAFFIC_CONTROL_DEVICE,traffic_control_device,text,"Traffic control device present at crash location, as determined by reporting officer"
+DEVICE_CONDITION,device_condition,text,"Condition of traffic control device, as determined by reporting officer"
+WEATHER_CONDITION,weather_condition,text,"Weather condition at time of crash, as determined by reporting officer"
+LIGHTING_CONDITION,lighting_condition,text,"Light condition at time of crash, as determined by reporting officer"
+FIRST_CRASH_TYPE,first_crash_type,text,Type of first collision in crash
+TRAFFICWAY_TYPE,trafficway_type,text,"Trafficway type, as determined by reporting officer"
+LANE_CNT,lane_cnt,number,"Total number of through lanes in either direction, excluding turn lanes, as determined by reporting officer (0 = intersection)"
+ALIGNMENT,alignment,text,"Street alignment at crash location, as determined by reporting officer"
+ROADWAY_SURFACE_COND,roadway_surface_cond,text,"Road surface condition, as determined by reporting officer"
+ROAD_DEFECT,road_defect,text,"Road defects, as determined by reporting officer"
+REPORT_TYPE,report_type,text,"Administrative report type (at scene, at desk, amended)"
+CRASH_TYPE,crash_type,text,A general severity classification for the crash. Can be either Injury and/or Tow Due to Crash or No Injury / Drive Away 
+INTERSECTION_RELATED_I,intersection_related_i,text,A field observation by the police officer whether an intersection played a role in the crash. Does not represent whether or not the crash occurred within the intersection.
+NOT_RIGHT_OF_WAY_I,private_property_i,text,Whether the crash begun or first contact was made outside of the public right-of-way.
+HIT_AND_RUN_I,hit_and_run_i,text,Crash did/did not involve a driver who caused the crash and fled the scene without exchanging information and/or rendering aid
+DAMAGE,damage,text,A field observation of estimated damage.
+DATE_POLICE_NOTIFIED,date_police_notified,calendar_date,Calendar date on which police were notified of the crash
+PRIM_CONTRIBUTORY_CAUSE,prim_contributory_cause,text,"The factor which was most significant in causing the crash, as determined by officer judgment"
+SEC_CONTRIBUTORY_CAUSE,sec_contributory_cause,text,"The factor which was second most significant in causing the crash, as determined by officer judgment"
+STREET_NO,street_no,number,"Street address number of crash location, as determined by reporting officer"
+STREET_DIRECTION,street_direction,text,"Street address direction (N,E,S,W) of crash location, as determined by reporting officer"
+STREET_NAME,street_name,text,"Street address name of crash location, as determined by reporting officer"
+BEAT_OF_OCCURRENCE,beat_of_occurrence,number,Chicago Police Department Beat ID. Boundaries available at https://data.cityofchicago.org/d/aerh-rz74
+PHOTOS_TAKEN_I,photos_taken_i,text,Whether the Chicago Police Department took photos at the location of the crash
+STATEMENTS_TAKEN_I,statements_taken_i,text,Whether statements were taken from unit(s) involved in crash
+DOORING_I,dooring_i,text,"Whether crash involved a motor vehicle occupant opening a door into the travel path of a bicyclist, causing a crash"
+WORK_ZONE_I,work_zone_i,text,Whether the crash occurred in an active work zone
+WORK_ZONE_TYPE,work_zone_type,text,"The type of work zone, if any"
+WORKERS_PRESENT_I,workers_present_i,text,Whether construction workers were present in an active work zone at crash location
+NUM_UNITS,num_units,number,"Number of units involved in the crash. A unit can be a motor vehicle, a pedestrian, a bicyclist, or another non-passenger roadway user. Each unit represents a mode of traffic with an independent trajectory. "
+MOST_SEVERE_INJURY,most_severe_injury,text,Most severe injury sustained by any person involved in the crash
+INJURIES_TOTAL,injuries_total,number,"Total persons sustaining fatal, incapacitating, non-incapacitating, and possible injuries as determined by the reporting officer"
+INJURIES_FATAL,injuries_fatal,number,Total persons sustaining fatal injuries in the crash
+INJURIES_INCAPACITATING,injuries_incapacitating,number,"Total persons sustaining incapacitating/serious injuries in the crash as determined by the reporting officer. Any injury other than fatal injury, which prevents the injured person from walking, driving, or normally continuing the activities they were capable of performing before the injury occurred. Includes severe lacerations, broken limbs, skull or chest injuries, and abdominal injuries."
+INJURIES_NON_INCAPACITATING,injuries_non_incapacitating,number,"Total persons sustaining non-incapacitating injuries in the crash as determined by the reporting officer. Any injury, other than fatal or incapacitating injury, which is evident to observers at the scene of the crash. Includes lump on head, abrasions, bruises, and minor lacerations."
+INJURIES_REPORTED_NOT_EVIDENT,injuries_reported_not_evident,number,"Total persons sustaining possible injuries in the crash as determined by the reporting officer. Includes momentary unconsciousness, claims of injuries not evident, limping, complaint of pain, nausea, and hysteria."
+INJURIES_NO_INDICATION,injuries_no_indication,number,Total persons sustaining no injuries in the crash as determined by the reporting officer
+INJURIES_UNKNOWN,injuries_unknown,number,"Total persons for whom injuries sustained, if any, are unknown"
+CRASH_HOUR,crash_hour,number,The hour of the day component of CRASH_DATE.
+CRASH_DAY_OF_WEEK,crash_day_of_week,number,"The day of the week component of CRASH_DATE. Sunday=1
+
+"
+CRASH_MONTH,crash_month,number,The month component of CRASH_DATE.
+LATITUDE,latitude,number,"The latitude of the crash location, as determined by reporting officer, as derived from the reported address of crash"
+LONGITUDE,longitude,number,"The longitude of the crash location, as determined by reporting officer, as derived from the reported address of crash"
+LOCATION,location,point,"The crash location, as determined by reporting officer, as derived from the reported address of crash, in a column type that allows for mapping and other geographic analysis in the data portal software"
+Boundaries - ZIP Codes,:@computed_region_rpca_8um6,number,This column was automatically created in order to record in what polygon from the dataset 'Boundaries - ZIP Codes' (rpca-8um6) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.

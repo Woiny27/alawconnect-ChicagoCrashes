@@ -110,3 +110,24 @@ API Endpoints
 | `/risk/analyze/usgs` | POST | AI risk analysis for earthquake data |
 
 ---
+
+## Implementation Tracker
+
+| Item You Want | Where It Should Be | Current Status | How to Add / Find It |
+|---|---|---|---|
+| Revised Contacts / Privacy Note | Root README.md (new section) | Added | See this section and prototype docs |
+| Provider-based Prototype | New folder: prototype/ | Added | [prototype](prototype) |
+| Chicago Crashes Schema | prototype/schema/ (JSON + CSV files) | Added | [prototype/schema](prototype/schema) |
+| Contacts Template | prototype/data/contacts_template.csv | Added | [prototype/data/contacts_template.csv](prototype/data/contacts_template.csv) |
+| Python Pipeline Code | Inside prototype/src/ | Added | [prototype/src/providers](prototype/src/providers) and [prototype/src/pipeline](prototype/src/pipeline) |
+| Google Sheet with Real Contacts | Do NOT upload to GitHub | Private only | Keep local and merge by `rd` key |
+
+## Contacts Data
+
+Real contact numbers (phone numbers, names, addresses) are available in the private Google Sheet:
+
+- [Chicago Crashes with Contacts](https://docs.google.com/spreadsheets/d/1HeSWYoEPxpE9bxrfMF_YMqCYYEm1QYNnwmTN9ljkgGg/edit?usp=drivesdk)
+
+Do not upload the raw sheet to GitHub due to privacy reasons.
+
+The prototype can merge public crash data with the contacts file locally using the `rd` column as the key.

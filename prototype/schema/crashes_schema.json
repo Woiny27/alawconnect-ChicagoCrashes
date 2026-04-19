@@ -1,0 +1,156 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Chicago Crashes Schema",
+  "description": "Schema for Chicago traffic crash records from the City of Chicago Open Data Portal",
+  "type": "object",
+  "properties": {
+    "crash_record_id": {
+      "type": "string",
+      "description": "Unique identifier for the crash record"
+    },
+    "crash_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date and time of crash"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Approximate latitude of crash location"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Approximate longitude of crash location"
+    },
+    "posted_speed_limit": {
+      "type": "integer",
+      "description": "Posted speed limit in mph"
+    },
+    "weather_condition": {
+      "type": "string",
+      "description": "Weather condition at time of crash",
+      "enum": [
+        "RAIN",
+        "CLEAR",
+        "CLOUDY/OVERCAST",
+        "UNKNOWN"
+      ]
+    },
+    "lighting_condition": {
+      "type": "string",
+      "description": "Lighting condition at time of crash",
+      "enum": [
+        "DAYLIGHT",
+        "DARKNESS",
+        "DARKNESS, LIGHTED ROAD",
+        "DUSK",
+        "DAWN",
+        "UNKNOWN"
+      ]
+    },
+    "crash_type": {
+      "type": "string",
+      "description": "Classification of crash type",
+      "enum": [
+        "NO INJURY / DRIVE AWAY",
+        "INJURY AND / OR TOW DUE TO CRASH",
+        "HIT AND RUN"
+      ]
+    },
+    "first_crash_type": {
+      "type": "string",
+      "description": "Type of first collision"
+    },
+    "trafficway_type": {
+      "type": "string",
+      "description": "Trafficway type"
+    },
+    "alignment": {
+      "type": "string",
+      "description": "Street alignment at crash location"
+    },
+    "roadway_surface_cond": {
+      "type": "string",
+      "description": "Road surface condition"
+    },
+    "most_severe_injury": {
+      "type": "string",
+      "description": "Most severe injury classification",
+      "enum": [
+        "FATAL INJURY",
+        "INCAPACITATING INJURY",
+        "NONINCAPACITATING INJURY",
+        "REPORTED, NOT EVIDENT",
+        "NO INDICATION OF INJURY"
+      ]
+    },
+    "injuries_total": {
+      "type": "integer",
+      "description": "Total number of injuries"
+    },
+    "injuries_fatal": {
+      "type": "integer",
+      "description": "Number of fatal injuries"
+    },
+    "injuries_incapacitating": {
+      "type": "integer",
+      "description": "Number of incapacitating injuries"
+    },
+    "injuries_non_incapacitating": {
+      "type": "integer",
+      "description": "Number of non-incapacitating injuries"
+    },
+    "prim_contributory_cause": {
+      "type": "string",
+      "description": "Primary contributing cause"
+    },
+    "sec_contributory_cause": {
+      "type": "string",
+      "description": "Secondary contributing cause"
+    },
+    "street_name": {
+      "type": "string",
+      "description": "Street where crash occurred"
+    },
+    "beat_of_occurrence": {
+      "type": "string",
+      "description": "Police beat where crash occurred"
+    },
+    "num_units": {
+      "type": "integer",
+      "description": "Number of units involved in crash"
+    },
+    "damage": {
+      "type": "string",
+      "description": "Damage level or estimated damage amount",
+      "enum": [
+        "OVER $1,500",
+        "$501 - $1,500",
+        "$500 OR LESS"
+      ]
+    },
+    "hit_and_run_i": {
+      "type": "string",
+      "description": "Hit-and-run indicator",
+      "enum": ["Y", "N"]
+    },
+    "intersection_related_i": {
+      "type": "string",
+      "description": "Intersection-related indicator",
+      "enum": ["Y", "N"]
+    },
+    "location": {
+      "type": "string",
+      "description": "Location in WKT POINT format",
+      "pattern": "^POINT \\([-.\\d]+ [-.\\d]+\\)$"
+    }
+  },
+  "required": [
+    "crash_record_id",
+    "crash_date",
+    "latitude",
+    "longitude",
+    "crash_type",
+    "most_severe_injury",
+    "location"
+  ]
+}

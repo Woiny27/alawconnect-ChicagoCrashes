@@ -1,0 +1,616 @@
+================================================================================
+CHICAGO CRASHES DATASET SCHEMA REFERENCE
+================================================================================
+
+CRASHES DATASET
+--------------------------------------------------------------------------------
+Total Columns: 49
+
+Field: crash_record_id
+  Name: CRASH_RECORD_ID
+  Type: text
+  Description: This number can be used to link to the same crash in the Vehicles and People datasets. This number also serves as a unique ID in this dataset.
+
+Field: crash_date_est_i
+  Name: CRASH_DATE_EST_I
+  Type: text
+  Description: Crash date estimated by desk officer or reporting party (only used in cases where crash is reported at police station days after the crash)
+
+Field: crash_date
+  Name: CRASH_DATE
+  Type: calendar_date
+  Description: Date and time of crash as entered by the reporting officer
+
+Field: posted_speed_limit
+  Name: POSTED_SPEED_LIMIT
+  Type: number
+  Description: Posted speed limit, as determined by reporting officer
+
+Field: traffic_control_device
+  Name: TRAFFIC_CONTROL_DEVICE
+  Type: text
+  Description: Traffic control device present at crash location, as determined by reporting officer
+
+Field: device_condition
+  Name: DEVICE_CONDITION
+  Type: text
+  Description: Condition of traffic control device, as determined by reporting officer
+
+Field: weather_condition
+  Name: WEATHER_CONDITION
+  Type: text
+  Description: Weather condition at time of crash, as determined by reporting officer
+
+Field: lighting_condition
+  Name: LIGHTING_CONDITION
+  Type: text
+  Description: Light condition at time of crash, as determined by reporting officer
+
+Field: first_crash_type
+  Name: FIRST_CRASH_TYPE
+  Type: text
+  Description: Type of first collision in crash
+
+Field: trafficway_type
+  Name: TRAFFICWAY_TYPE
+  Type: text
+  Description: Trafficway type, as determined by reporting officer
+
+Field: lane_cnt
+  Name: LANE_CNT
+  Type: number
+  Description: Total number of through lanes in either direction, excluding turn lanes, as determined by reporting officer (0 = intersection)
+
+Field: alignment
+  Name: ALIGNMENT
+  Type: text
+  Description: Street alignment at crash location, as determined by reporting officer
+
+Field: roadway_surface_cond
+  Name: ROADWAY_SURFACE_COND
+  Type: text
+  Description: Road surface condition, as determined by reporting officer
+
+Field: road_defect
+  Name: ROAD_DEFECT
+  Type: text
+  Description: Road defects, as determined by reporting officer
+
+Field: report_type
+  Name: REPORT_TYPE
+  Type: text
+  Description: Administrative report type (at scene, at desk, amended)
+
+Field: crash_type
+  Name: CRASH_TYPE
+  Type: text
+  Description: A general severity classification for the crash. Can be either Injury and/or Tow Due to Crash or No Injury / Drive Away 
+
+Field: intersection_related_i
+  Name: INTERSECTION_RELATED_I
+  Type: text
+  Description: A field observation by the police officer whether an intersection played a role in the crash. Does not represent whether or not the crash occurred within the intersection.
+
+Field: private_property_i
+  Name: NOT_RIGHT_OF_WAY_I
+  Type: text
+  Description: Whether the crash begun or first contact was made outside of the public right-of-way.
+
+Field: hit_and_run_i
+  Name: HIT_AND_RUN_I
+  Type: text
+  Description: Crash did/did not involve a driver who caused the crash and fled the scene without exchanging information and/or rendering aid
+
+Field: damage
+  Name: DAMAGE
+  Type: text
+  Description: A field observation of estimated damage.
+
+Field: date_police_notified
+  Name: DATE_POLICE_NOTIFIED
+  Type: calendar_date
+  Description: Calendar date on which police were notified of the crash
+
+Field: prim_contributory_cause
+  Name: PRIM_CONTRIBUTORY_CAUSE
+  Type: text
+  Description: The factor which was most significant in causing the crash, as determined by officer judgment
+
+Field: sec_contributory_cause
+  Name: SEC_CONTRIBUTORY_CAUSE
+  Type: text
+  Description: The factor which was second most significant in causing the crash, as determined by officer judgment
+
+Field: street_no
+  Name: STREET_NO
+  Type: number
+  Description: Street address number of crash location, as determined by reporting officer
+
+Field: street_direction
+  Name: STREET_DIRECTION
+  Type: text
+  Description: Street address direction (N,E,S,W) of crash location, as determined by reporting officer
+
+Field: street_name
+  Name: STREET_NAME
+  Type: text
+  Description: Street address name of crash location, as determined by reporting officer
+
+Field: beat_of_occurrence
+  Name: BEAT_OF_OCCURRENCE
+  Type: number
+  Description: Chicago Police Department Beat ID. Boundaries available at https://data.cityofchicago.org/d/aerh-rz74
+
+Field: photos_taken_i
+  Name: PHOTOS_TAKEN_I
+  Type: text
+  Description: Whether the Chicago Police Department took photos at the location of the crash
+
+Field: statements_taken_i
+  Name: STATEMENTS_TAKEN_I
+  Type: text
+  Description: Whether statements were taken from unit(s) involved in crash
+
+Field: dooring_i
+  Name: DOORING_I
+  Type: text
+  Description: Whether crash involved a motor vehicle occupant opening a door into the travel path of a bicyclist, causing a crash
+
+Field: work_zone_i
+  Name: WORK_ZONE_I
+  Type: text
+  Description: Whether the crash occurred in an active work zone
+
+Field: work_zone_type
+  Name: WORK_ZONE_TYPE
+  Type: text
+  Description: The type of work zone, if any
+
+Field: workers_present_i
+  Name: WORKERS_PRESENT_I
+  Type: text
+  Description: Whether construction workers were present in an active work zone at crash location
+
+Field: num_units
+  Name: NUM_UNITS
+  Type: number
+  Description: Number of units involved in the crash. A unit can be a motor vehicle, a pedestrian, a bicyclist, or another non-passenger roadway user. Each unit represents a mode of traffic with an independent trajectory. 
+
+Field: most_severe_injury
+  Name: MOST_SEVERE_INJURY
+  Type: text
+  Description: Most severe injury sustained by any person involved in the crash
+
+Field: injuries_total
+  Name: INJURIES_TOTAL
+  Type: number
+  Description: Total persons sustaining fatal, incapacitating, non-incapacitating, and possible injuries as determined by the reporting officer
+
+Field: injuries_fatal
+  Name: INJURIES_FATAL
+  Type: number
+  Description: Total persons sustaining fatal injuries in the crash
+
+Field: injuries_incapacitating
+  Name: INJURIES_INCAPACITATING
+  Type: number
+  Description: Total persons sustaining incapacitating/serious injuries in the crash as determined by the reporting officer. Any injury other than fatal injury, which prevents the injured person from walking, driving, or normally continuing the activities they were capable of performing before the injury occurred. Includes severe lacerations, broken limbs, skull or chest injuries, and abdominal injuries.
+
+Field: injuries_non_incapacitating
+  Name: INJURIES_NON_INCAPACITATING
+  Type: number
+  Description: Total persons sustaining non-incapacitating injuries in the crash as determined by the reporting officer. Any injury, other than fatal or incapacitating injury, which is evident to observers at the scene of the crash. Includes lump on head, abrasions, bruises, and minor lacerations.
+
+Field: injuries_reported_not_evident
+  Name: INJURIES_REPORTED_NOT_EVIDENT
+  Type: number
+  Description: Total persons sustaining possible injuries in the crash as determined by the reporting officer. Includes momentary unconsciousness, claims of injuries not evident, limping, complaint of pain, nausea, and hysteria.
+
+Field: injuries_no_indication
+  Name: INJURIES_NO_INDICATION
+  Type: number
+  Description: Total persons sustaining no injuries in the crash as determined by the reporting officer
+
+Field: injuries_unknown
+  Name: INJURIES_UNKNOWN
+  Type: number
+  Description: Total persons for whom injuries sustained, if any, are unknown
+
+Field: crash_hour
+  Name: CRASH_HOUR
+  Type: number
+  Description: The hour of the day component of CRASH_DATE.
+
+Field: crash_day_of_week
+  Name: CRASH_DAY_OF_WEEK
+  Type: number
+  Description: The day of the week component of CRASH_DATE. Sunday=1
+
+
+
+Field: crash_month
+  Name: CRASH_MONTH
+  Type: number
+  Description: The month component of CRASH_DATE.
+
+Field: latitude
+  Name: LATITUDE
+  Type: number
+  Description: The latitude of the crash location, as determined by reporting officer, as derived from the reported address of crash
+
+Field: longitude
+  Name: LONGITUDE
+  Type: number
+  Description: The longitude of the crash location, as determined by reporting officer, as derived from the reported address of crash
+
+Field: location
+  Name: LOCATION
+  Type: point
+  Description: The crash location, as determined by reporting officer, as derived from the reported address of crash, in a column type that allows for mapping and other geographic analysis in the data portal software
+
+Field: :@computed_region_rpca_8um6
+  Name: Boundaries - ZIP Codes
+  Type: number
+  Description: This column was automatically created in order to record in what polygon from the dataset 'Boundaries - ZIP Codes' (rpca-8um6) the point in column 'location' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.
+
+
+================================================================================
+VEHICLES DATASET
+--------------------------------------------------------------------------------
+Total Columns: 71
+
+Field: crash_unit_id
+  Name: CRASH_UNIT_ID
+  Type: number
+  Description: A unique identifier for each vehicle record.
+
+Field: crash_record_id
+  Name: CRASH_RECORD_ID
+  Type: text
+  Description: This number can be used to link to the same crash in the Crashes and People datasets. This number also serves as a unique ID in the Crashes dataset.
+
+Field: crash_date
+  Name: CRASH_DATE
+  Type: calendar_date
+  Description: Date and time of crash as entered by the reporting officer
+
+Field: unit_no
+  Name: UNIT_NO
+  Type: number
+  Description: A unique ID for each unit within a specific crash report.
+
+Field: unit_type
+  Name: UNIT_TYPE
+  Type: text
+  Description: The type of unit
+
+Field: num_passengers
+  Name: NUM_PASSENGERS
+  Type: number
+  Description: Number of passengers in the vehicle. The driver is not included. More information on passengers is in the People dataset.
+
+Field: vehicle_id
+  Name: VEHICLE_ID
+  Type: number
+  Description: 
+
+Field: cmrc_veh_i
+  Name: CMRC_VEH_I
+  Type: text
+  Description: 
+
+Field: make
+  Name: MAKE
+  Type: text
+  Description: The make (brand) of the vehicle, if relevant
+
+Field: model
+  Name: MODEL
+  Type: text
+  Description: The model of the vehicle, if relevant
+
+Field: lic_plate_state
+  Name: LIC_PLATE_STATE
+  Type: text
+  Description: The state issuing the license plate of the vehicle, if relevant
+
+Field: vehicle_year
+  Name: VEHICLE_YEAR
+  Type: number
+  Description: The model year of the vehicle, if relevant
+
+Field: vehicle_defect
+  Name: VEHICLE_DEFECT
+  Type: text
+  Description: 
+
+Field: vehicle_type
+  Name: VEHICLE_TYPE
+  Type: text
+  Description: The type of vehicle, if relevant
+
+Field: vehicle_use
+  Name: VEHICLE_USE
+  Type: text
+  Description: The normal use of the vehicle, if relevant
+
+Field: travel_direction
+  Name: TRAVEL_DIRECTION
+  Type: text
+  Description: The direction in which the unit was traveling prior to the crash, as determined by the reporting officer
+
+Field: maneuver
+  Name: MANEUVER
+  Type: text
+  Description: The action the unit was taking prior to the crash, as determined by the reporting officer
+
+Field: towed_i
+  Name: TOWED_I
+  Type: text
+  Description: Indicator of whether the vehicle was towed
+
+Field: fire_i
+  Name: FIRE_I
+  Type: text
+  Description: 
+
+Field: occupant_cnt
+  Name: OCCUPANT_CNT
+  Type: number
+  Description: The number of people in the unit, as determined by the reporting officer
+
+Field: exceed_speed_limit_i
+  Name: EXCEED_SPEED_LIMIT_I
+  Type: text
+  Description: Indicator of whether the unit was speeding, as determined by the reporting officer
+
+Field: towed_by
+  Name: TOWED_BY
+  Type: text
+  Description: Entity that towed the unit, if relevant
+
+Field: towed_to
+  Name: TOWED_TO
+  Type: text
+  Description: Location to which the unit was towed, if relevant
+
+Field: area_00_i
+  Name: AREA_00_I
+  Type: text
+  Description: 
+
+Field: area_01_i
+  Name: AREA_01_I
+  Type: text
+  Description: 
+
+Field: area_02_i
+  Name: AREA_02_I
+  Type: text
+  Description: 
+
+Field: area_03_i
+  Name: AREA_03_I
+  Type: text
+  Description: 
+
+Field: area_04_i
+  Name: AREA_04_I
+  Type: text
+  Description: 
+
+Field: area_05_i
+  Name: AREA_05_I
+  Type: text
+  Description: 
+
+Field: area_06_i
+  Name: AREA_06_I
+  Type: text
+  Description: 
+
+Field: area_07_i
+  Name: AREA_07_I
+  Type: text
+  Description: 
+
+Field: area_08_i
+  Name: AREA_08_I
+  Type: text
+  Description: 
+
+Field: area_09_i
+  Name: AREA_09_I
+  Type: text
+  Description: 
+
+Field: area_10_i
+  Name: AREA_10_I
+  Type: text
+  Description: 
+
+Field: area_11_i
+  Name: AREA_11_I
+  Type: text
+  Description: 
+
+Field: area_12_i
+  Name: AREA_12_I
+  Type: text
+  Description: 
+
+Field: area_99_i
+  Name: AREA_99_I
+  Type: text
+  Description: 
+
+Field: first_contact_point
+  Name: FIRST_CONTACT_POINT
+  Type: text
+  Description: 
+
+Field: cmv_id
+  Name: CMV_ID
+  Type: number
+  Description: 
+
+Field: usdot_no
+  Name: USDOT_NO
+  Type: text
+  Description: 
+
+Field: ccmc_no
+  Name: CCMC_NO
+  Type: text
+  Description: 
+
+Field: ilcc_no
+  Name: ILCC_NO
+  Type: text
+  Description: 
+
+Field: commercial_src
+  Name: COMMERCIAL_SRC
+  Type: text
+  Description: 
+
+Field: gvwr
+  Name: GVWR
+  Type: text
+  Description: 
+
+Field: carrier_name
+  Name: CARRIER_NAME
+  Type: text
+  Description: 
+
+Field: carrier_state
+  Name: CARRIER_STATE
+  Type: text
+  Description: 
+
+Field: carrier_city
+  Name: CARRIER_CITY
+  Type: text
+  Description: 
+
+Field: hazmat_placards_i
+  Name: HAZMAT_PLACARDS_I
+  Type: text
+  Description: 
+
+Field: hazmat_name
+  Name: HAZMAT_NAME
+  Type: text
+  Description: 
+
+Field: un_no
+  Name: UN_NO
+  Type: text
+  Description: 
+
+Field: hazmat_present_i
+  Name: HAZMAT_PRESENT_I
+  Type: text
+  Description: 
+
+Field: hazmat_report_i
+  Name: HAZMAT_REPORT_I
+  Type: text
+  Description: 
+
+Field: hazmat_report_no
+  Name: HAZMAT_REPORT_NO
+  Type: text
+  Description: 
+
+Field: mcs_report_i
+  Name: MCS_REPORT_I
+  Type: text
+  Description: 
+
+Field: mcs_report_no
+  Name: MCS_REPORT_NO
+  Type: text
+  Description: 
+
+Field: hazmat_vio_cause_crash_i
+  Name: HAZMAT_VIO_CAUSE_CRASH_I
+  Type: text
+  Description: 
+
+Field: mcs_vio_cause_crash_i
+  Name: MCS_VIO_CAUSE_CRASH_I
+  Type: text
+  Description: 
+
+Field: idot_permit_no
+  Name: IDOT_PERMIT_NO
+  Type: text
+  Description: 
+
+Field: wide_load_i
+  Name: WIDE_LOAD_I
+  Type: text
+  Description: 
+
+Field: trailer1_width
+  Name: TRAILER1_WIDTH
+  Type: text
+  Description: 
+
+Field: trailer2_width
+  Name: TRAILER2_WIDTH
+  Type: text
+  Description: 
+
+Field: trailer1_length
+  Name: TRAILER1_LENGTH
+  Type: number
+  Description: 
+
+Field: trailer2_length
+  Name: TRAILER2_LENGTH
+  Type: number
+  Description: 
+
+Field: total_vehicle_length
+  Name: TOTAL_VEHICLE_LENGTH
+  Type: number
+  Description: 
+
+Field: axle_cnt
+  Name: AXLE_CNT
+  Type: number
+  Description: 
+
+Field: vehicle_config
+  Name: VEHICLE_CONFIG
+  Type: text
+  Description: 
+
+Field: cargo_body_type
+  Name: CARGO_BODY_TYPE
+  Type: text
+  Description: 
+
+Field: load_type
+  Name: LOAD_TYPE
+  Type: text
+  Description: 
+
+Field: hazmat_out_of_service_i
+  Name: HAZMAT_OUT_OF_SERVICE_I
+  Type: text
+  Description: 
+
+Field: mcs_out_of_service_i
+  Name: MCS_OUT_OF_SERVICE_I
+  Type: text
+  Description: 
+
+Field: hazmat_class
+  Name: HAZMAT_CLASS
+  Type: text
+  Description: 
+

@@ -1,0 +1,3918 @@
+[ {
+  "id" : 450988755,
+  "name" : "CRASH_UNIT_ID",
+  "dataTypeName" : "number",
+  "description" : "A unique identifier for each vehicle record.",
+  "fieldName" : "crash_unit_id",
+  "position" : 1,
+  "renderTypeName" : "number",
+  "tableColumnId" : 59331225,
+  "width" : 176,
+  "cachedContents" : {
+    "non_null" : "1243478",
+    "largest" : "1323976",
+    "null" : "0",
+    "top" : [ {
+      "item" : "3",
+      "count" : "1"
+    }, {
+      "item" : "4",
+      "count" : "1"
+    }, {
+      "item" : "5",
+      "count" : "1"
+    }, {
+      "item" : "6",
+      "count" : "1"
+    }, {
+      "item" : "7",
+      "count" : "1"
+    }, {
+      "item" : "8",
+      "count" : "1"
+    }, {
+      "item" : "9",
+      "count" : "1"
+    }, {
+      "item" : "10",
+      "count" : "1"
+    }, {
+      "item" : "11",
+      "count" : "1"
+    }, {
+      "item" : "12",
+      "count" : "1"
+    }, {
+      "item" : "13",
+      "count" : "1"
+    }, {
+      "item" : "14",
+      "count" : "1"
+    }, {
+      "item" : "15",
+      "count" : "1"
+    }, {
+      "item" : "16",
+      "count" : "1"
+    }, {
+      "item" : "17",
+      "count" : "1"
+    }, {
+      "item" : "18",
+      "count" : "1"
+    }, {
+      "item" : "19",
+      "count" : "1"
+    }, {
+      "item" : "21",
+      "count" : "1"
+    }, {
+      "item" : "22",
+      "count" : "1"
+    }, {
+      "item" : "23",
+      "count" : "1"
+    } ],
+    "smallest" : "2",
+    "count" : "1243478",
+    "cardinality" : "1243478"
+  },
+  "format" : {
+    "precisionStyle" : "standard",
+    "noCommas" : "true",
+    "align" : "right"
+  }
+}, {
+  "id" : 450988853,
+  "name" : "CRASH_RECORD_ID",
+  "dataTypeName" : "text",
+  "description" : "This number can be used to link to the same crash in the Crashes and People datasets. This number also serves as a unique ID in the Crashes dataset.",
+  "fieldName" : "crash_record_id",
+  "position" : 2,
+  "renderTypeName" : "text",
+  "tableColumnId" : 94538098,
+  "width" : 256,
+  "cachedContents" : {
+    "non_null" : "1243478",
+    "largest" : "ffffe577251dc1cc67f2f823b595e5028427a210e2a40e7a1240f09533d35f33353f94dab96310e9fd80ed126c2190487b78c7709cb39550201e63df40532e54",
+    "null" : "0",
+    "top" : [ {
+      "item" : "ca71bf45d00e22775995550b55d9e9a51f83b9572b9383f15e57791eddc6325b2ab454ec4a1ef3e258131385dc9052d76e438bbbef773edf1d4fe5b829460b00",
+      "count" : "21"
+    }, {
+      "item" : "8f823505f601c93cfe2072bdc567ead047802dcfdd8a63be63cd66b768104075b26c2f8061b3f86e94fb24d4e2407b43249be8cc0e0c29ed68641514b76aac9c",
+      "count" : "19"
+    }, {
+      "item" : "e4f07da854d2b7be0c4c0903296e6f1a1f0109ddebca9d5b5dc399ffc698f2118f0f658ad5b1e3559714e0a3e2550720e3cb88e9753ce9a93ca3a20fa553fed7",
+      "count" : "18"
+    }, {
+      "item" : "a09ecae956cea4750bbe70a91168c87e7de1bc4871ced78aec4e467f40a1ad6f14f4a2c4190e1c06013378922c74011fdf9555fefc487e7b8623f71f575ab13c",
+      "count" : "16"
+    }, {
+      "item" : "d4c3f39de39d4f08abf19fb11df98628adc0f6024c7d10d266df234e93f6241fd3f993e1cf002806cced9c88c0cf839fd7cc91ec161e544c4273ed2c7186fd97",
+      "count" : "16"
+    }, {
+      "item" : "fb8d94334f5987710b7aa9cb4b0302f8e4c8f5f6e6d9f50ff0502a143737b3bfe95c37d970bcab190390797ad5c8fb6a9b6909f73186488c9b91267a4b844c65",
+      "count" : "16"
+    }, {
+      "item" : "05b84c294095d0f8b7ad815b0ee785285bc65c5ed9e4e8bd09ec6e238439ad1845c1bbd1f0980688cc4a3edb1d301a56ac76fc4ed7dee25aa0978c11aa8e414d",
+      "count" : "15"
+    }, {
+      "item" : "d128ebe105ed99a8372e21acc70d596bf4a64b28249e679ba33d4b450db5dba4621aa305e5e3cc8e31cab1beebf75645b34211d4dbbb434e5fb7d142c2569870",
+      "count" : "15"
+    }, {
+      "item" : "106292520d505fad1413b217022eda17ad652128a061e1e9dee274084957e4653a8c20ea6c3ba67fc354200b5354e4c6d1241894272e1b7bb123890947971566",
+      "count" : "14"
+    }, {
+      "item" : "1f2f6a037425cd77c0e9dcf718fd38bf357ab5aa29c91123f0f735763aec6e2f4844b1f19e891ccdd065b7704c8d21411546c633e2604c8fe972d629dbd45b49",
+      "count" : "14"
+    }, {
+      "item" : "74e9d893f1df817db0fd24a7d10006941f1eda0c9e7a33c62bb2850e5a9560099b88bececab94471325d467f79f04ddf70ad92357f500c1e5765905d95278524",
+      "count" : "14"
+    }, {
+      "item" : "b98e207b3fc5828a243d8b20ea342a64edead2e0064318491a9436d797b648d7c01553307a911174c1313e9155fe232e9f1a4b6a2858608ee2ef62f269984b27",
+      "count" : "14"
+    }, {
+      "item" : "251349f28d2a69697dcc9e1e332bdaf938c08fab053c2f719ebbfd759c3402a4d8b42443bbdf55aaf500bd542d0b6d65c6842ade9d59109c4c32d35e1351fb31",
+      "count" : "14"
+    }, {
+      "item" : "b6c3bbdfdf73f1a718582926d26a1f8a6aa8b471d15780a29ec62f0c89fbc233f5ea39e3e60404331087e499d77386eaac7e708336666944f93c4e48cfedc83f",
+      "count" : "14"
+    }, {
+      "item" : "450b7ee37782d12a8f7b58be4ec8adf41a3a1cb78eec06ae04e13ec5b017572b66b9d948ca542f16c8c78fa44a0a8de69e57f482cd38f978c4655070f6ad23ec",
+      "count" : "13"
+    }, {
+      "item" : "d67eebed5c373596f6c60698d260799fb657be4b0a86842bab8ad699815ce4f80ca16edf3b01abc3a01863873e23119cfbbdf136b386b8a8c0b3af2b8da79f9e",
+      "count" : "13"
+    }, {
+      "item" : "d271873b1f43de70528d8861d419ea9f7dd6d402f73151e6f83e327261a6519f1abc4d6095664da414fab8536333ab264d427cd4e6fddda323bf677c3355c1ce",
+      "count" : "13"
+    }, {
+      "item" : "91e621981b63747f5884463564d267a68e1c22b9bf863b0f221f908297ae3348add955398dd821070caa541e3562324fa74df14dbf6a8ede36219424cd208152",
+      "count" : "13"
+    }, {
+      "item" : "a3eb6a025df6f3818045a22962a1ef6962e960bd9bc62a8d77ed7efbbf880875b714c5ee52914b570f81de792f1d337e14b346464ff260ca7fca16864c3c959d",
+      "count" : "13"
+    }, {
+      "item" : "7faffc8513136f918b6cde1ec8739df8fcc9ff7dac5f464619fa0aa80954ab43ce2ee239b2ea5e346bb5a8643e48344a3ae4df7e7823f17a57889105e3289d2a",
+      "count" : "12"
+    } ],
+    "smallest" : "000013b0123279411e0ec856dae95ab9f0851764350b7feaeb982c7707c6722066910e9391e60f45cec4b7a7a6643eeedb5de39e7245b03447a44c793680dc4b",
+    "count" : "1243478",
+    "cardinality" : "606844"
+  },
+  "format" : { }
+}, {
+  "id" : 450988757,
+  "name" : "CRASH_DATE",
+  "dataTypeName" : "calendar_date",
+  "description" : "Date and time of crash as entered by the reporting officer",
+  "fieldName" : "crash_date",
+  "position" : 4,
+  "renderTypeName" : "calendar_date",
+  "tableColumnId" : 60143459,
+  "width" : 154,
+  "cachedContents" : {
+    "non_null" : "1243478",
+    "largest" : "2022-04-26T00:06:00.000",
+    "null" : "0",
+    "top" : [ {
+      "item" : "2020-12-29T17:00:00.000",
+      "count" : "62"
+    }, {
+      "item" : "2017-11-10T10:30:00.000",
+      "count" : "58"
+    }, {
+      "item" : "2022-02-17T15:30:00.000",
+      "count" : "42"
+    }, {
+      "item" : "2017-11-10T10:00:00.000",
+      "count" : "42"
+    }, {
+      "item" : "2019-01-12T14:30:00.000",
+      "count" : "41"
+    }, {
+      "item" : "2021-02-04T13:30:00.000",
+      "count" : "40"
+    }, {
+      "item" : "2021-02-04T14:00:00.000",
+      "count" : "39"
+    }, {
+      "item" : "2019-01-12T14:00:00.000",
+      "count" : "38"
+    }, {
+      "item" : "2019-01-12T15:00:00.000",
+      "count" : "37"
+    }, {
+      "item" : "2020-02-26T07:45:00.000",
+      "count" : "35"
+    }, {
+      "item" : "2021-12-10T16:00:00.000",
+      "count" : "34"
+    }, {
+      "item" : "2021-08-29T12:00:00.000",
+      "count" : "33"
+    }, {
+      "item" : "2018-09-04T08:00:00.000",
+      "count" : "32"
+    }, {
+      "item" : "2020-12-29T17:30:00.000",
+      "count" : "32"
+    }, {
+      "item" : "2020-02-26T08:00:00.000",
+      "count" : "32"
+    }, {
+      "item" : "2018-04-04T07:45:00.000",
+      "count" : "31"
+    }, {
+      "item" : "2018-10-10T15:30:00.000",
+      "count" : "31"
+    }, {
+      "item" : "2019-02-10T14:00:00.000",
+      "count" : "31"
+    }, {
+      "item" : "2021-11-19T15:30:00.000",
+      "count" : "30"
+    }, {
+      "item" : "2018-04-04T07:30:00.000",
+      "count" : "30"
+    } ],
+    "smallest" : "2013-03-03T16:48:00.000",
+    "count" : "1243478",
+    "cardinality" : "396912"
+  },
+  "format" : {
+    "view" : "date_time",
+    "align" : "right"
+  }
+}, {
+  "id" : 450988758,
+  "name" : "UNIT_NO",
+  "dataTypeName" : "number",
+  "description" : "A unique ID for each unit within a specific crash report.",
+  "fieldName" : "unit_no",
+  "position" : 5,
+  "renderTypeName" : "number",
+  "tableColumnId" : 59331227,
+  "width" : 144,
+  "cachedContents" : {
+    "non_null" : "1243478",
+    "largest" : "3778035",
+    "null" : "0",
+    "top" : [ {
+      "item" : "1",
+      "count" : "612931"
+    }, {
+      "item" : "2",
+      "count" : "577160"
+    }, {
+      "item" : "3",
+      "count" : "41409"
+    }, {
+      "item" : "4",
+      "count" : "8482"
+    }, {
+      "item" : "5",
+      "count" : "2252"
+    }, {
+      "item" : "6",
+      "count" : "722"
+    }, {
+      "item" : "7",
+      "count" : "275"
+    }, {
+      "item" : "8",
+      "count" : "113"
+    }, {
+      "item" : "9",
+      "count" : "54"
+    }, {
+      "item" : "10",
+      "count" : "25"
+    }, {
+      "item" : "0",
+      "count" : "19"
+    }, {
+      "item" : "11",
+      "count" : "13"
+    }, {
+      "item" : "12",
+      "count" : "7"
+    }, {
+      "item" : "13",
+      "count" : "4"
+    }, {
+      "item" : "14",
+      "count" : "4"
+    }, {
+      "item" : "15",
+      "count" : "3"
+    }, {
+      "item" : "16",
+      "count" : "2"
+    }, {
+      "item" : "17",
+      "count" : "1"
+    }, {
+      "item" : "18",
+      "count" : "1"
+    }, {
+      "item" : "3778035",
+      "count" : "1"
+    } ],
+    "smallest" : "0",
+    "count" : "1243478",
+    "cardinality" : "20"
+  },
+  "format" : {
+    "precisionStyle" : "standard",
+    "decimalSeparator" : ".",
+    "groupSeparator" : ",",
+    "align" : "right"
+  }
+}, {
+  "id" : 450988759,
+  "name" : "UNIT_TYPE",
+  "dataTypeName" : "text",
+  "description" : "The type of unit",
+  "fieldName" : "unit_type",
+  "position" : 6,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331229,
+  "width" : 173,
+  "cachedContents" : {
+    "non_null" : "1241708",
+    "largest" : "PEDESTRIAN",
+    "null" : "1770",
+    "top" : [ {
+      "item" : "DRIVER",
+      "count" : "1041857"
+    }, {
+      "item" : "PARKED",
+      "count" : "162915"
+    }, {
+      "item" : "PEDESTRIAN",
+      "count" : "15351"
+    }, {
+      "item" : "DRIVERLESS",
+      "count" : "11110"
+    }, {
+      "item" : "BICYCLE",
+      "count" : "8984"
+    }, {
+      "item" : "NON-MOTOR VEHICLE",
+      "count" : "1109"
+    }, {
+      "item" : "NON-CONTACT VEHICLE",
+      "count" : "239"
+    }, {
+      "item" : "DISABLED VEHICLE",
+      "count" : "137"
+    }, {
+      "item" : "EQUESTRIAN",
+      "count" : "6"
+    } ],
+    "smallest" : "BICYCLE",
+    "count" : "1243478",
+    "cardinality" : "9"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988760,
+  "name" : "NUM_PASSENGERS",
+  "dataTypeName" : "number",
+  "description" : "Number of passengers in the vehicle. The driver is not included. More information on passengers is in the People dataset.",
+  "fieldName" : "num_passengers",
+  "position" : 7,
+  "renderTypeName" : "number",
+  "tableColumnId" : 59331375,
+  "width" : 200,
+  "cachedContents" : {
+    "non_null" : "185209",
+    "largest" : "59",
+    "null" : "1058269",
+    "top" : [ {
+      "item" : "1",
+      "count" : "130774"
+    }, {
+      "item" : "2",
+      "count" : "34426"
+    }, {
+      "item" : "3",
+      "count" : "13374"
+    }, {
+      "item" : "4",
+      "count" : "4442"
+    }, {
+      "item" : "5",
+      "count" : "1187"
+    }, {
+      "item" : "6",
+      "count" : "449"
+    }, {
+      "item" : "7",
+      "count" : "173"
+    }, {
+      "item" : "8",
+      "count" : "86"
+    }, {
+      "item" : "10",
+      "count" : "57"
+    }, {
+      "item" : "9",
+      "count" : "53"
+    }, {
+      "item" : "12",
+      "count" : "31"
+    }, {
+      "item" : "11",
+      "count" : "31"
+    }, {
+      "item" : "14",
+      "count" : "17"
+    }, {
+      "item" : "15",
+      "count" : "14"
+    }, {
+      "item" : "13",
+      "count" : "13"
+    }, {
+      "item" : "18",
+      "count" : "9"
+    }, {
+      "item" : "19",
+      "count" : "8"
+    }, {
+      "item" : "17",
+      "count" : "7"
+    }, {
+      "item" : "16",
+      "count" : "5"
+    }, {
+      "item" : "26",
+      "count" : "5"
+    } ],
+    "smallest" : "1",
+    "count" : "1243478",
+    "cardinality" : "42"
+  },
+  "format" : {
+    "precisionStyle" : "standard",
+    "align" : "right"
+  }
+}, {
+  "id" : 450988761,
+  "name" : "VEHICLE_ID",
+  "dataTypeName" : "number",
+  "description" : "",
+  "fieldName" : "vehicle_id",
+  "position" : 8,
+  "renderTypeName" : "number",
+  "tableColumnId" : 59331261,
+  "width" : 165,
+  "cachedContents" : {
+    "non_null" : "1215375",
+    "largest" : "1257595",
+    "null" : "28103",
+    "top" : [ {
+      "item" : "3",
+      "count" : "1"
+    }, {
+      "item" : "4",
+      "count" : "1"
+    }, {
+      "item" : "5",
+      "count" : "1"
+    }, {
+      "item" : "6",
+      "count" : "1"
+    }, {
+      "item" : "7",
+      "count" : "1"
+    }, {
+      "item" : "8",
+      "count" : "1"
+    }, {
+      "item" : "9",
+      "count" : "1"
+    }, {
+      "item" : "10",
+      "count" : "1"
+    }, {
+      "item" : "11",
+      "count" : "1"
+    }, {
+      "item" : "12",
+      "count" : "1"
+    }, {
+      "item" : "13",
+      "count" : "1"
+    }, {
+      "item" : "14",
+      "count" : "1"
+    }, {
+      "item" : "15",
+      "count" : "1"
+    }, {
+      "item" : "16",
+      "count" : "1"
+    }, {
+      "item" : "17",
+      "count" : "1"
+    }, {
+      "item" : "18",
+      "count" : "1"
+    }, {
+      "item" : "19",
+      "count" : "1"
+    }, {
+      "item" : "21",
+      "count" : "1"
+    }, {
+      "item" : "22",
+      "count" : "1"
+    }, {
+      "item" : "23",
+      "count" : "1"
+    } ],
+    "smallest" : "2",
+    "count" : "1243478",
+    "cardinality" : "1215375"
+  },
+  "format" : {
+    "precisionStyle" : "standard",
+    "noCommas" : "true",
+    "align" : "right"
+  }
+}, {
+  "id" : 450988762,
+  "name" : "CMRC_VEH_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "cmrc_veh_i",
+  "position" : 9,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331262,
+  "width" : 220,
+  "cachedContents" : {
+    "non_null" : "23137",
+    "largest" : "Y",
+    "null" : "1220341",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "15155"
+    }, {
+      "item" : "N",
+      "count" : "7982"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988763,
+  "name" : "MAKE",
+  "dataTypeName" : "text",
+  "description" : "The make (brand) of the vehicle, if relevant",
+  "fieldName" : "make",
+  "position" : 10,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331264,
+  "width" : 220,
+  "cachedContents" : {
+    "non_null" : "1215370",
+    "largest" : "ZIM",
+    "null" : "28108",
+    "top" : [ {
+      "item" : "CHEVROLET",
+      "count" : "143862"
+    }, {
+      "item" : "UNKNOWN",
+      "count" : "121518"
+    }, {
+      "item" : "FORD",
+      "count" : "121167"
+    }, {
+      "item" : "NISSAN",
+      "count" : "100548"
+    }, {
+      "item" : "TOYOTA MOTOR COMPANY, LTD.",
+      "count" : "89215"
+    }, {
+      "item" : "HONDA",
+      "count" : "87263"
+    }, {
+      "item" : "DODGE",
+      "count" : "54929"
+    }, {
+      "item" : "HYUNDAI",
+      "count" : "50727"
+    }, {
+      "item" : "JEEP",
+      "count" : "48418"
+    }, {
+      "item" : "TOYOTA",
+      "count" : "42670"
+    }, {
+      "item" : "CHRYSLER",
+      "count" : "23882"
+    }, {
+      "item" : "VOLKSWAGEN",
+      "count" : "23339"
+    }, {
+      "item" : "BUICK",
+      "count" : "21267"
+    }, {
+      "item" : "LEXUS",
+      "count" : "18127"
+    }, {
+      "item" : "KIA MOTORS CORP",
+      "count" : "17582"
+    }, {
+      "item" : "MERCEDES-BENZ",
+      "count" : "16626"
+    }, {
+      "item" : "BMW",
+      "count" : "15734"
+    }, {
+      "item" : "MAZDA",
+      "count" : "15517"
+    }, {
+      "item" : "CADILLAC",
+      "count" : "13517"
+    }, {
+      "item" : "PONTIAC",
+      "count" : "13380"
+    } ],
+    "smallest" : "A-1 TRAILER",
+    "count" : "1243478",
+    "cardinality" : "1165"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988764,
+  "name" : "MODEL",
+  "dataTypeName" : "text",
+  "description" : "The model of the vehicle, if relevant",
+  "fieldName" : "model",
+  "position" : 11,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331266,
+  "width" : 232,
+  "cachedContents" : {
+    "non_null" : "1215226",
+    "largest" : "ZX2",
+    "null" : "28252",
+    "top" : [ {
+      "item" : "UNKNOWN",
+      "count" : "180803"
+    }, {
+      "item" : "OTHER (EXPLAIN IN NARRATIVE)",
+      "count" : "75549"
+    }, {
+      "item" : "CAMRY",
+      "count" : "39519"
+    }, {
+      "item" : "COROLLA",
+      "count" : "24196"
+    }, {
+      "item" : "CIVIC",
+      "count" : "23209"
+    }, {
+      "item" : "ACCORD",
+      "count" : "21188"
+    }, {
+      "item" : "IMPALA",
+      "count" : "18695"
+    }, {
+      "item" : "NISSAN ALTIMA",
+      "count" : "17767"
+    }, {
+      "item" : "MALIBU (CHEVELLE)",
+      "count" : "14452"
+    }, {
+      "item" : "ROGUE",
+      "count" : "14335"
+    }, {
+      "item" : "ELANTRA",
+      "count" : "14277"
+    }, {
+      "item" : "SONATA",
+      "count" : "13640"
+    }, {
+      "item" : "EQUINOX",
+      "count" : "13154"
+    }, {
+      "item" : "EXPLORER",
+      "count" : "12891"
+    }, {
+      "item" : "FUSION",
+      "count" : "12881"
+    }, {
+      "item" : "CHEROKEE",
+      "count" : "11720"
+    }, {
+      "item" : "MOTORIZED",
+      "count" : "11715"
+    }, {
+      "item" : "SENTRA (DATSUN AND NISSAN HAVE MERGED)",
+      "count" : "11137"
+    }, {
+      "item" : "CRUZE",
+      "count" : "10834"
+    }, {
+      "item" : "CARAVAN",
+      "count" : "9857"
+    } ],
+    "smallest" : "090",
+    "count" : "1243478",
+    "cardinality" : "2522"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988765,
+  "name" : "LIC_PLATE_STATE",
+  "dataTypeName" : "text",
+  "description" : "The state issuing the license plate of the vehicle, if relevant",
+  "fieldName" : "lic_plate_state",
+  "position" : 12,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331267,
+  "width" : 190,
+  "cachedContents" : {
+    "non_null" : "1106775",
+    "largest" : "XX",
+    "null" : "136703",
+    "top" : [ {
+      "item" : "IL",
+      "count" : "1011981"
+    }, {
+      "item" : "XX",
+      "count" : "26652"
+    }, {
+      "item" : "IN",
+      "count" : "21698"
+    }, {
+      "item" : "WI",
+      "count" : "6907"
+    }, {
+      "item" : "MI",
+      "count" : "4731"
+    }, {
+      "item" : "FL",
+      "count" : "3476"
+    }, {
+      "item" : "TX",
+      "count" : "3402"
+    }, {
+      "item" : "OH",
+      "count" : "2795"
+    }, {
+      "item" : "AZ",
+      "count" : "2451"
+    }, {
+      "item" : "IA",
+      "count" : "2053"
+    }, {
+      "item" : "MN",
+      "count" : "2008"
+    }, {
+      "item" : "MO",
+      "count" : "1902"
+    }, {
+      "item" : "CA",
+      "count" : "1715"
+    }, {
+      "item" : "TN",
+      "count" : "1618"
+    }, {
+      "item" : "GA",
+      "count" : "1377"
+    }, {
+      "item" : "OK",
+      "count" : "1046"
+    }, {
+      "item" : "PA",
+      "count" : "879"
+    }, {
+      "item" : "NY",
+      "count" : "810"
+    }, {
+      "item" : "VA",
+      "count" : "728"
+    }, {
+      "item" : "KY",
+      "count" : "722"
+    } ],
+    "smallest" : "AK",
+    "count" : "1243478",
+    "cardinality" : "52"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988766,
+  "name" : "VEHICLE_YEAR",
+  "dataTypeName" : "number",
+  "description" : "The model year of the vehicle, if relevant",
+  "fieldName" : "vehicle_year",
+  "position" : 13,
+  "renderTypeName" : "number",
+  "tableColumnId" : 59331269,
+  "width" : 244,
+  "cachedContents" : {
+    "non_null" : "1017015",
+    "largest" : "9999",
+    "null" : "226463",
+    "top" : [ {
+      "item" : "2015",
+      "count" : "78354"
+    }, {
+      "item" : "2016",
+      "count" : "73583"
+    }, {
+      "item" : "2017",
+      "count" : "70355"
+    }, {
+      "item" : "2014",
+      "count" : "69487"
+    }, {
+      "item" : "2013",
+      "count" : "63874"
+    }, {
+      "item" : "2012",
+      "count" : "55535"
+    }, {
+      "item" : "2007",
+      "count" : "50980"
+    }, {
+      "item" : "2018",
+      "count" : "50071"
+    }, {
+      "item" : "2008",
+      "count" : "49569"
+    }, {
+      "item" : "2011",
+      "count" : "47414"
+    }, {
+      "item" : "2006",
+      "count" : "45359"
+    }, {
+      "item" : "2010",
+      "count" : "41174"
+    }, {
+      "item" : "2005",
+      "count" : "40664"
+    }, {
+      "item" : "2004",
+      "count" : "35564"
+    }, {
+      "item" : "2019",
+      "count" : "34870"
+    }, {
+      "item" : "2009",
+      "count" : "34845"
+    }, {
+      "item" : "2003",
+      "count" : "30679"
+    }, {
+      "item" : "2002",
+      "count" : "27083"
+    }, {
+      "item" : "2020",
+      "count" : "21218"
+    }, {
+      "item" : "2001",
+      "count" : "20713"
+    } ],
+    "smallest" : "1900",
+    "count" : "1243478",
+    "cardinality" : "198"
+  },
+  "format" : {
+    "precisionStyle" : "standard",
+    "noCommas" : "true",
+    "align" : "right"
+  }
+}, {
+  "id" : 450988767,
+  "name" : "VEHICLE_DEFECT",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "vehicle_defect",
+  "position" : 14,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331271,
+  "width" : 198,
+  "cachedContents" : {
+    "non_null" : "1215375",
+    "largest" : "WINDOWS",
+    "null" : "28103",
+    "top" : [ {
+      "item" : "NONE",
+      "count" : "686954"
+    }, {
+      "item" : "UNKNOWN",
+      "count" : "516103"
+    }, {
+      "item" : "OTHER",
+      "count" : "5999"
+    }, {
+      "item" : "BRAKES",
+      "count" : "4037"
+    }, {
+      "item" : "TIRES",
+      "count" : "612"
+    }, {
+      "item" : "STEERING",
+      "count" : "576"
+    }, {
+      "item" : "WHEELS",
+      "count" : "322"
+    }, {
+      "item" : "SUSPENSION",
+      "count" : "213"
+    }, {
+      "item" : "ENGINE/MOTOR",
+      "count" : "156"
+    }, {
+      "item" : "FUEL SYSTEM",
+      "count" : "129"
+    }, {
+      "item" : "LIGHTS",
+      "count" : "81"
+    }, {
+      "item" : "WINDOWS",
+      "count" : "72"
+    }, {
+      "item" : "CARGO",
+      "count" : "39"
+    }, {
+      "item" : "SIGNALS",
+      "count" : "31"
+    }, {
+      "item" : "TRAILER COUPLING",
+      "count" : "17"
+    }, {
+      "item" : "RESTRAINT SYSTEM",
+      "count" : "17"
+    }, {
+      "item" : "EXHAUST",
+      "count" : "17"
+    } ],
+    "smallest" : "BRAKES",
+    "count" : "1243478",
+    "cardinality" : "17"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988768,
+  "name" : "VEHICLE_TYPE",
+  "dataTypeName" : "text",
+  "description" : "The type of vehicle, if relevant",
+  "fieldName" : "vehicle_type",
+  "position" : 15,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331273,
+  "width" : 316,
+  "cachedContents" : {
+    "non_null" : "1215375",
+    "largest" : "VAN/MINI-VAN",
+    "null" : "28103",
+    "top" : [ {
+      "item" : "PASSENGER",
+      "count" : "767732"
+    }, {
+      "item" : "SPORT UTILITY VEHICLE (SUV)",
+      "count" : "160783"
+    }, {
+      "item" : "UNKNOWN/NA",
+      "count" : "116019"
+    }, {
+      "item" : "VAN/MINI-VAN",
+      "count" : "60151"
+    }, {
+      "item" : "PICKUP",
+      "count" : "37069"
+    }, {
+      "item" : "TRUCK - SINGLE UNIT",
+      "count" : "23197"
+    }, {
+      "item" : "OTHER",
+      "count" : "13968"
+    }, {
+      "item" : "BUS OVER 15 PASS.",
+      "count" : "12881"
+    }, {
+      "item" : "TRACTOR W/ SEMI-TRAILER",
+      "count" : "11653"
+    }, {
+      "item" : "BUS UP TO 15 PASS.",
+      "count" : "2796"
+    }, {
+      "item" : "MOTORCYCLE (OVER 150CC)",
+      "count" : "2751"
+    }, {
+      "item" : "SINGLE UNIT TRUCK WITH TRAILER",
+      "count" : "1737"
+    }, {
+      "item" : "OTHER VEHICLE WITH TRAILER",
+      "count" : "1567"
+    }, {
+      "item" : "TRACTOR W/O SEMI-TRAILER",
+      "count" : "1557"
+    }, {
+      "item" : "AUTOCYCLE",
+      "count" : "634"
+    }, {
+      "item" : "MOTOR DRIVEN CYCLE",
+      "count" : "326"
+    }, {
+      "item" : "MOPED OR MOTORIZED BICYCLE",
+      "count" : "282"
+    }, {
+      "item" : "ALL-TERRAIN VEHICLE (ATV)",
+      "count" : "141"
+    }, {
+      "item" : "FARM EQUIPMENT",
+      "count" : "67"
+    }, {
+      "item" : "3-WHEELED MOTORCYCLE (2 REAR WHEELS)",
+      "count" : "39"
+    } ],
+    "smallest" : "3-WHEELED MOTORCYCLE (2 REAR WHEELS)",
+    "count" : "1243478",
+    "cardinality" : "22"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988769,
+  "name" : "VEHICLE_USE",
+  "dataTypeName" : "text",
+  "description" : "The normal use of the vehicle, if relevant",
+  "fieldName" : "vehicle_use",
+  "position" : 16,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331275,
+  "width" : 304,
+  "cachedContents" : {
+    "non_null" : "1215375",
+    "largest" : "UNKNOWN/NA",
+    "null" : "28103",
+    "top" : [ {
+      "item" : "PERSONAL",
+      "count" : "786788"
+    }, {
+      "item" : "UNKNOWN/NA",
+      "count" : "242473"
+    }, {
+      "item" : "NOT IN USE",
+      "count" : "62842"
+    }, {
+      "item" : "OTHER",
+      "count" : "37766"
+    }, {
+      "item" : "TAXI/FOR HIRE",
+      "count" : "17361"
+    }, {
+      "item" : "COMMERCIAL - SINGLE UNIT",
+      "count" : "15318"
+    }, {
+      "item" : "RIDESHARE SERVICE",
+      "count" : "10485"
+    }, {
+      "item" : "CTA",
+      "count" : "8161"
+    }, {
+      "item" : "POLICE",
+      "count" : "7926"
+    }, {
+      "item" : "CONSTRUCTION/MAINTENANCE",
+      "count" : "5571"
+    }, {
+      "item" : "COMMERCIAL - MULTI-UNIT",
+      "count" : "4961"
+    }, {
+      "item" : "OTHER TRANSIT",
+      "count" : "3964"
+    }, {
+      "item" : "SCHOOL BUS",
+      "count" : "3288"
+    }, {
+      "item" : "TOW TRUCK",
+      "count" : "2323"
+    }, {
+      "item" : "AMBULANCE",
+      "count" : "1434"
+    }, {
+      "item" : "FIRE",
+      "count" : "1174"
+    }, {
+      "item" : "STATE OWNED",
+      "count" : "1027"
+    }, {
+      "item" : "DRIVER EDUCATION",
+      "count" : "942"
+    }, {
+      "item" : "MASS TRANSIT",
+      "count" : "832"
+    }, {
+      "item" : "LAWN CARE/LANDSCAPING",
+      "count" : "463"
+    } ],
+    "smallest" : "AGRICULTURE",
+    "count" : "1243478",
+    "cardinality" : "25"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988770,
+  "name" : "TRAVEL_DIRECTION",
+  "dataTypeName" : "text",
+  "description" : "The direction in which the unit was traveling prior to the crash, as determined by the reporting officer",
+  "fieldName" : "travel_direction",
+  "position" : 17,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331277,
+  "width" : 205,
+  "cachedContents" : {
+    "non_null" : "1215375",
+    "largest" : "W",
+    "null" : "28103",
+    "top" : [ {
+      "item" : "N",
+      "count" : "286314"
+    }, {
+      "item" : "S",
+      "count" : "280383"
+    }, {
+      "item" : "W",
+      "count" : "253974"
+    }, {
+      "item" : "E",
+      "count" : "248259"
+    }, {
+      "item" : "UNKNOWN",
+      "count" : "94436"
+    }, {
+      "item" : "SE",
+      "count" : "15254"
+    }, {
+      "item" : "NW",
+      "count" : "13868"
+    }, {
+      "item" : "SW",
+      "count" : "11467"
+    }, {
+      "item" : "NE",
+      "count" : "11420"
+    } ],
+    "smallest" : "E",
+    "count" : "1243478",
+    "cardinality" : "9"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988771,
+  "name" : "MANEUVER",
+  "dataTypeName" : "text",
+  "description" : "The action the unit was taking prior to the crash, as determined by the reporting officer",
+  "fieldName" : "maneuver",
+  "position" : 18,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331279,
+  "width" : 268,
+  "cachedContents" : {
+    "non_null" : "1215375",
+    "largest" : "U-TURN",
+    "null" : "28103",
+    "top" : [ {
+      "item" : "STRAIGHT AHEAD",
+      "count" : "551769"
+    }, {
+      "item" : "PARKED",
+      "count" : "167216"
+    }, {
+      "item" : "UNKNOWN/NA",
+      "count" : "94937"
+    }, {
+      "item" : "SLOW/STOP IN TRAFFIC",
+      "count" : "93866"
+    }, {
+      "item" : "TURNING LEFT",
+      "count" : "70955"
+    }, {
+      "item" : "BACKING",
+      "count" : "50714"
+    }, {
+      "item" : "TURNING RIGHT",
+      "count" : "39793"
+    }, {
+      "item" : "PASSING/OVERTAKING",
+      "count" : "28895"
+    }, {
+      "item" : "CHANGING LANES",
+      "count" : "23699"
+    }, {
+      "item" : "OTHER",
+      "count" : "20427"
+    }, {
+      "item" : "ENTERING TRAFFIC LANE FROM PARKING",
+      "count" : "14289"
+    }, {
+      "item" : "MERGING",
+      "count" : "8355"
+    }, {
+      "item" : "STARTING IN TRAFFIC",
+      "count" : "7293"
+    }, {
+      "item" : "U-TURN",
+      "count" : "6756"
+    }, {
+      "item" : "LEAVING TRAFFIC LANE TO PARK",
+      "count" : "5993"
+    }, {
+      "item" : "AVOIDING VEHICLES/OBJECTS",
+      "count" : "5297"
+    }, {
+      "item" : "SKIDDING/CONTROL LOSS",
+      "count" : "5171"
+    }, {
+      "item" : "ENTER FROM DRIVE/ALLEY",
+      "count" : "4961"
+    }, {
+      "item" : "PARKED IN TRAFFIC LANE",
+      "count" : "3634"
+    }, {
+      "item" : "SLOW/STOP - LEFT TURN",
+      "count" : "3042"
+    } ],
+    "smallest" : "AVOIDING VEHICLES/OBJECTS",
+    "count" : "1243478",
+    "cardinality" : "28"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988772,
+  "name" : "TOWED_I",
+  "dataTypeName" : "text",
+  "description" : "Indicator of whether the vehicle was towed",
+  "fieldName" : "towed_i",
+  "position" : 19,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331280,
+  "width" : 184,
+  "cachedContents" : {
+    "non_null" : "149983",
+    "largest" : "Y",
+    "null" : "1093495",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "141616"
+    }, {
+      "item" : "N",
+      "count" : "8367"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988773,
+  "name" : "FIRE_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "fire_i",
+  "position" : 20,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331281,
+  "width" : 172,
+  "cachedContents" : {
+    "non_null" : "977",
+    "largest" : "Y",
+    "null" : "1242501",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "549"
+    }, {
+      "item" : "N",
+      "count" : "428"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988774,
+  "name" : "OCCUPANT_CNT",
+  "dataTypeName" : "number",
+  "description" : "The number of people in the unit, as determined by the reporting officer",
+  "fieldName" : "occupant_cnt",
+  "position" : 21,
+  "renderTypeName" : "number",
+  "tableColumnId" : 59331282,
+  "width" : 193,
+  "cachedContents" : {
+    "non_null" : "1215375",
+    "largest" : "99",
+    "null" : "28103",
+    "top" : [ {
+      "item" : "1",
+      "count" : "878813"
+    }, {
+      "item" : "0",
+      "count" : "161033"
+    }, {
+      "item" : "2",
+      "count" : "123661"
+    }, {
+      "item" : "3",
+      "count" : "32695"
+    }, {
+      "item" : "4",
+      "count" : "12839"
+    }, {
+      "item" : "5",
+      "count" : "4257"
+    }, {
+      "item" : "6",
+      "count" : "1121"
+    }, {
+      "item" : "7",
+      "count" : "421"
+    }, {
+      "item" : "8",
+      "count" : "164"
+    }, {
+      "item" : "9",
+      "count" : "84"
+    }, {
+      "item" : "11",
+      "count" : "54"
+    }, {
+      "item" : "10",
+      "count" : "52"
+    }, {
+      "item" : "13",
+      "count" : "30"
+    }, {
+      "item" : "12",
+      "count" : "29"
+    }, {
+      "item" : "15",
+      "count" : "16"
+    }, {
+      "item" : "14",
+      "count" : "13"
+    }, {
+      "item" : "16",
+      "count" : "12"
+    }, {
+      "item" : "19",
+      "count" : "9"
+    }, {
+      "item" : "20",
+      "count" : "9"
+    }, {
+      "item" : "18",
+      "count" : "7"
+    } ],
+    "smallest" : "0",
+    "count" : "1243478",
+    "cardinality" : "45"
+  },
+  "format" : {
+    "precisionStyle" : "standard",
+    "decimalSeparator" : ".",
+    "groupSeparator" : ",",
+    "align" : "right"
+  }
+}, {
+  "id" : 450988775,
+  "name" : "EXCEED_SPEED_LIMIT_I",
+  "dataTypeName" : "text",
+  "description" : "Indicator of whether the unit was speeding, as determined by the reporting officer",
+  "fieldName" : "exceed_speed_limit_i",
+  "position" : 22,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331285,
+  "width" : 258,
+  "cachedContents" : {
+    "non_null" : "2395",
+    "largest" : "Y",
+    "null" : "1241083",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "1797"
+    }, {
+      "item" : "N",
+      "count" : "598"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988776,
+  "name" : "TOWED_BY",
+  "dataTypeName" : "text",
+  "description" : "Entity that towed the unit, if relevant",
+  "fieldName" : "towed_by",
+  "position" : 23,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331286,
+  "width" : 196,
+  "cachedContents" : {
+    "non_null" : "111152",
+    "largest" : "ZURICH AMERICAN INSURANCE",
+    "null" : "1132326",
+    "top" : [ {
+      "item" : "PRIVATE TOW",
+      "count" : "9565"
+    }, {
+      "item" : "PRIVATE",
+      "count" : "8986"
+    }, {
+      "item" : "private",
+      "count" : "7219"
+    }, {
+      "item" : "CITY OF CHICAGO",
+      "count" : "7073"
+    }, {
+      "item" : "private tow",
+      "count" : "5655"
+    }, {
+      "item" : "UNKNOWN",
+      "count" : "4882"
+    }, {
+      "item" : "city of chicago",
+      "count" : "4417"
+    }, {
+      "item" : "unk",
+      "count" : "2953"
+    }, {
+      "item" : "UNK",
+      "count" : "2932"
+    }, {
+      "item" : "OWNER",
+      "count" : "2870"
+    }, {
+      "item" : "unknown",
+      "count" : "2649"
+    }, {
+      "item" : "owner",
+      "count" : "2591"
+    }, {
+      "item" : "PERSONAL TOW",
+      "count" : "1539"
+    }, {
+      "item" : "STREETS AND SANITATION",
+      "count" : "1399"
+    }, {
+      "item" : "PERSONAL",
+      "count" : "1038"
+    }, {
+      "item" : "CPD",
+      "count" : "841"
+    }, {
+      "item" : "personal tow",
+      "count" : "839"
+    }, {
+      "item" : "streets and sanitation",
+      "count" : "777"
+    }, {
+      "item" : "E&R",
+      "count" : "717"
+    }, {
+      "item" : "personal",
+      "count" : "670"
+    } ],
+    "smallest" : ".",
+    "count" : "1243478",
+    "cardinality" : "11164"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988777,
+  "name" : "TOWED_TO",
+  "dataTypeName" : "text",
+  "description" : "Location to which the unit was towed, if relevant",
+  "fieldName" : "towed_to",
+  "position" : 24,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331287,
+  "width" : 196,
+  "cachedContents" : {
+    "non_null" : "68746",
+    "largest" : "ZY96137",
+    "null" : "1174732",
+    "top" : [ {
+      "item" : "UNKNOWN",
+      "count" : "9558"
+    }, {
+      "item" : "UNK",
+      "count" : "5541"
+    }, {
+      "item" : "unknown",
+      "count" : "5451"
+    }, {
+      "item" : "unk",
+      "count" : "4459"
+    }, {
+      "item" : "PRIVATE",
+      "count" : "1392"
+    }, {
+      "item" : "private",
+      "count" : "1187"
+    }, {
+      "item" : "POUND 2",
+      "count" : "707"
+    }, {
+      "item" : "RESIDENCE",
+      "count" : "653"
+    }, {
+      "item" : "701 N SACRAMENTO",
+      "count" : "615"
+    }, {
+      "item" : "POUND 6",
+      "count" : "580"
+    }, {
+      "item" : "POUND",
+      "count" : "552"
+    }, {
+      "item" : "PRIVATE TOW",
+      "count" : "525"
+    }, {
+      "item" : "HOME",
+      "count" : "475"
+    }, {
+      "item" : "CITY POUND",
+      "count" : "473"
+    }, {
+      "item" : "POUND 1",
+      "count" : "433"
+    }, {
+      "item" : "DOTY",
+      "count" : "421"
+    }, {
+      "item" : "residence",
+      "count" : "421"
+    }, {
+      "item" : "pound 2",
+      "count" : "398"
+    }, {
+      "item" : "pound",
+      "count" : "391"
+    }, {
+      "item" : "home",
+      "count" : "390"
+    } ],
+    "smallest" : "`",
+    "count" : "1243478",
+    "cardinality" : "11790"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988778,
+  "name" : "AREA_00_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "area_00_i",
+  "position" : 25,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331289,
+  "width" : 149,
+  "cachedContents" : {
+    "non_null" : "45396",
+    "largest" : "Y",
+    "null" : "1198082",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "39657"
+    }, {
+      "item" : "N",
+      "count" : "5739"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988779,
+  "name" : "AREA_01_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "area_01_i",
+  "position" : 26,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331290,
+  "width" : 148,
+  "cachedContents" : {
+    "non_null" : "326722",
+    "largest" : "Y",
+    "null" : "916756",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "312191"
+    }, {
+      "item" : "N",
+      "count" : "14531"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988780,
+  "name" : "AREA_02_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "area_02_i",
+  "position" : 27,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331291,
+  "width" : 145,
+  "cachedContents" : {
+    "non_null" : "203719",
+    "largest" : "Y",
+    "null" : "1039759",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "193908"
+    }, {
+      "item" : "N",
+      "count" : "9811"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988781,
+  "name" : "AREA_03_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "area_03_i",
+  "position" : 28,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331292,
+  "width" : 146,
+  "cachedContents" : {
+    "non_null" : "117823",
+    "largest" : "Y",
+    "null" : "1125655",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "112438"
+    }, {
+      "item" : "N",
+      "count" : "5385"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988782,
+  "name" : "AREA_04_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "area_04_i",
+  "position" : 29,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331293,
+  "width" : 153,
+  "cachedContents" : {
+    "non_null" : "120541",
+    "largest" : "Y",
+    "null" : "1122937",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "115134"
+    }, {
+      "item" : "N",
+      "count" : "5407"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988783,
+  "name" : "AREA_05_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "area_05_i",
+  "position" : 30,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331294,
+  "width" : 154,
+  "cachedContents" : {
+    "non_null" : "185775",
+    "largest" : "Y",
+    "null" : "1057703",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "178608"
+    }, {
+      "item" : "N",
+      "count" : "7167"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988784,
+  "name" : "AREA_06_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "area_06_i",
+  "position" : 31,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331295,
+  "width" : 149,
+  "cachedContents" : {
+    "non_null" : "190934",
+    "largest" : "Y",
+    "null" : "1052544",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "183390"
+    }, {
+      "item" : "N",
+      "count" : "7544"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988785,
+  "name" : "AREA_07_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "area_07_i",
+  "position" : 32,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331296,
+  "width" : 151,
+  "cachedContents" : {
+    "non_null" : "169509",
+    "largest" : "Y",
+    "null" : "1073969",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "162200"
+    }, {
+      "item" : "N",
+      "count" : "7309"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988786,
+  "name" : "AREA_08_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "area_08_i",
+  "position" : 33,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331297,
+  "width" : 146,
+  "cachedContents" : {
+    "non_null" : "192992",
+    "largest" : "Y",
+    "null" : "1050486",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "182973"
+    }, {
+      "item" : "N",
+      "count" : "10019"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988787,
+  "name" : "AREA_09_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "area_09_i",
+  "position" : 34,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331298,
+  "width" : 156,
+  "cachedContents" : {
+    "non_null" : "67260",
+    "largest" : "Y",
+    "null" : "1176218",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "63911"
+    }, {
+      "item" : "N",
+      "count" : "3349"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988788,
+  "name" : "AREA_10_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "area_10_i",
+  "position" : 35,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331299,
+  "width" : 151,
+  "cachedContents" : {
+    "non_null" : "96907",
+    "largest" : "Y",
+    "null" : "1146571",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "91874"
+    }, {
+      "item" : "N",
+      "count" : "5033"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988789,
+  "name" : "AREA_11_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "area_11_i",
+  "position" : 36,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331300,
+  "width" : 149,
+  "cachedContents" : {
+    "non_null" : "190855",
+    "largest" : "Y",
+    "null" : "1052623",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "179655"
+    }, {
+      "item" : "N",
+      "count" : "11200"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988790,
+  "name" : "AREA_12_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "area_12_i",
+  "position" : 37,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331301,
+  "width" : 155,
+  "cachedContents" : {
+    "non_null" : "188531",
+    "largest" : "Y",
+    "null" : "1054947",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "180877"
+    }, {
+      "item" : "N",
+      "count" : "7654"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988791,
+  "name" : "AREA_99_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "area_99_i",
+  "position" : 38,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331302,
+  "width" : 151,
+  "cachedContents" : {
+    "non_null" : "135089",
+    "largest" : "Y",
+    "null" : "1108389",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "130022"
+    }, {
+      "item" : "N",
+      "count" : "5067"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988792,
+  "name" : "FIRST_CONTACT_POINT",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "first_contact_point",
+  "position" : 39,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331304,
+  "width" : 248,
+  "cachedContents" : {
+    "non_null" : "1205217",
+    "largest" : "UNKNOWN",
+    "null" : "38261",
+    "top" : [ {
+      "item" : "FRONT",
+      "count" : "188390"
+    }, {
+      "item" : "OTHER",
+      "count" : "134355"
+    }, {
+      "item" : "REAR-LEFT",
+      "count" : "133499"
+    }, {
+      "item" : "UNKNOWN",
+      "count" : "114690"
+    }, {
+      "item" : "REAR",
+      "count" : "111172"
+    }, {
+      "item" : "FRONT-LEFT",
+      "count" : "95818"
+    }, {
+      "item" : "FRONT-RIGHT",
+      "count" : "84671"
+    }, {
+      "item" : "SIDE-RIGHT",
+      "count" : "77906"
+    }, {
+      "item" : "TOTAL (ALL AREAS)",
+      "count" : "75746"
+    }, {
+      "item" : "SIDE-LEFT",
+      "count" : "73189"
+    }, {
+      "item" : "REAR-RIGHT",
+      "count" : "47109"
+    }, {
+      "item" : "ROOF",
+      "count" : "44685"
+    }, {
+      "item" : "UNDER CARRIAGE",
+      "count" : "13458"
+    }, {
+      "item" : "NONE",
+      "count" : "10529"
+    } ],
+    "smallest" : "FRONT",
+    "count" : "1243478",
+    "cardinality" : "14"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988793,
+  "name" : "CMV_ID",
+  "dataTypeName" : "number",
+  "description" : "",
+  "fieldName" : "cmv_id",
+  "position" : 40,
+  "renderTypeName" : "number",
+  "tableColumnId" : 59331305,
+  "width" : 172,
+  "cachedContents" : {
+    "non_null" : "13058",
+    "largest" : "14545",
+    "null" : "1230420",
+    "top" : [ {
+      "item" : "2",
+      "count" : "1"
+    }, {
+      "item" : "3",
+      "count" : "1"
+    }, {
+      "item" : "4",
+      "count" : "1"
+    }, {
+      "item" : "5",
+      "count" : "1"
+    }, {
+      "item" : "6",
+      "count" : "1"
+    }, {
+      "item" : "8",
+      "count" : "1"
+    }, {
+      "item" : "9",
+      "count" : "1"
+    }, {
+      "item" : "10",
+      "count" : "1"
+    }, {
+      "item" : "11",
+      "count" : "1"
+    }, {
+      "item" : "12",
+      "count" : "1"
+    }, {
+      "item" : "13",
+      "count" : "1"
+    }, {
+      "item" : "14",
+      "count" : "1"
+    }, {
+      "item" : "15",
+      "count" : "1"
+    }, {
+      "item" : "16",
+      "count" : "1"
+    }, {
+      "item" : "17",
+      "count" : "1"
+    }, {
+      "item" : "18",
+      "count" : "1"
+    }, {
+      "item" : "19",
+      "count" : "1"
+    }, {
+      "item" : "20",
+      "count" : "1"
+    }, {
+      "item" : "21",
+      "count" : "1"
+    }, {
+      "item" : "22",
+      "count" : "1"
+    } ],
+    "smallest" : "1",
+    "count" : "1243478",
+    "cardinality" : "13058"
+  },
+  "format" : {
+    "precisionStyle" : "standard",
+    "decimalSeparator" : ".",
+    "groupSeparator" : ",",
+    "align" : "right"
+  }
+}, {
+  "id" : 450988794,
+  "name" : "USDOT_NO",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "usdot_no",
+  "position" : 41,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331306,
+  "width" : 196,
+  "cachedContents" : {
+    "non_null" : "7531",
+    "largest" : "Z64334",
+    "null" : "1235947",
+    "top" : [ {
+      "item" : "0080806",
+      "count" : "232"
+    }, {
+      "item" : "UNKNOWN",
+      "count" : "118"
+    }, {
+      "item" : "UNK",
+      "count" : "95"
+    }, {
+      "item" : "264184",
+      "count" : "93"
+    }, {
+      "item" : "327574",
+      "count" : "84"
+    }, {
+      "item" : "80806",
+      "count" : "59"
+    }, {
+      "item" : "265752",
+      "count" : "52"
+    }, {
+      "item" : "540864",
+      "count" : "38"
+    }, {
+      "item" : "16130",
+      "count" : "36"
+    }, {
+      "item" : "021800",
+      "count" : "33"
+    }, {
+      "item" : "1092543",
+      "count" : "30"
+    }, {
+      "item" : "330984",
+      "count" : "30"
+    }, {
+      "item" : "054283",
+      "count" : "30"
+    }, {
+      "item" : "207231",
+      "count" : "27"
+    }, {
+      "item" : "1454112",
+      "count" : "27"
+    }, {
+      "item" : "53467",
+      "count" : "27"
+    }, {
+      "item" : "704220",
+      "count" : "26"
+    }, {
+      "item" : "1714924",
+      "count" : "26"
+    }, {
+      "item" : "76635",
+      "count" : "23"
+    }, {
+      "item" : "1762064",
+      "count" : "22"
+    } ],
+    "smallest" : "000",
+    "count" : "1243478",
+    "cardinality" : "3744"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988795,
+  "name" : "CCMC_NO",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "ccmc_no",
+  "position" : 42,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331307,
+  "width" : 184,
+  "cachedContents" : {
+    "non_null" : "1648",
+    "largest" : "YLB712",
+    "null" : "1241830",
+    "top" : [ {
+      "item" : "UNK",
+      "count" : "152"
+    }, {
+      "item" : "549479",
+      "count" : "16"
+    }, {
+      "item" : "120924",
+      "count" : "11"
+    }, {
+      "item" : "556753",
+      "count" : "10"
+    }, {
+      "item" : "321562",
+      "count" : "10"
+    }, {
+      "item" : "NONE",
+      "count" : "10"
+    }, {
+      "item" : "476351",
+      "count" : "8"
+    }, {
+      "item" : "DNA",
+      "count" : "8"
+    }, {
+      "item" : "N/A",
+      "count" : "7"
+    }, {
+      "item" : "720308",
+      "count" : "6"
+    }, {
+      "item" : "087056",
+      "count" : "6"
+    }, {
+      "item" : "775710",
+      "count" : "6"
+    }, {
+      "item" : "205685",
+      "count" : "6"
+    }, {
+      "item" : "305681",
+      "count" : "6"
+    }, {
+      "item" : "UNKNOW",
+      "count" : "6"
+    }, {
+      "item" : "121265",
+      "count" : "5"
+    }, {
+      "item" : "257991",
+      "count" : "5"
+    }, {
+      "item" : "99",
+      "count" : "5"
+    }, {
+      "item" : "157824",
+      "count" : "5"
+    }, {
+      "item" : "980112",
+      "count" : "5"
+    } ],
+    "smallest" : "0",
+    "count" : "1243478",
+    "cardinality" : "1178"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988796,
+  "name" : "ILCC_NO",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "ilcc_no",
+  "position" : 43,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331308,
+  "width" : 184,
+  "cachedContents" : {
+    "non_null" : "1184",
+    "largest" : "UNKOWN",
+    "null" : "1242294",
+    "top" : [ {
+      "item" : "UNK",
+      "count" : "157"
+    }, {
+      "item" : "268946",
+      "count" : "16"
+    }, {
+      "item" : "6545",
+      "count" : "15"
+    }, {
+      "item" : "184190",
+      "count" : "10"
+    }, {
+      "item" : "193112",
+      "count" : "9"
+    }, {
+      "item" : "DNA",
+      "count" : "9"
+    }, {
+      "item" : "NONE",
+      "count" : "9"
+    }, {
+      "item" : "N/A",
+      "count" : "9"
+    }, {
+      "item" : "11748",
+      "count" : "7"
+    }, {
+      "item" : "173570",
+      "count" : "6"
+    }, {
+      "item" : "13596",
+      "count" : "6"
+    }, {
+      "item" : "80000",
+      "count" : "6"
+    }, {
+      "item" : "114232",
+      "count" : "6"
+    }, {
+      "item" : "76472",
+      "count" : "6"
+    }, {
+      "item" : "219921",
+      "count" : "5"
+    }, {
+      "item" : "226711",
+      "count" : "5"
+    }, {
+      "item" : "51821",
+      "count" : "5"
+    }, {
+      "item" : "66371",
+      "count" : "5"
+    }, {
+      "item" : "137072",
+      "count" : "4"
+    }, {
+      "item" : "58700",
+      "count" : "4"
+    } ],
+    "smallest" : "0",
+    "count" : "1243478",
+    "cardinality" : "766"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988797,
+  "name" : "COMMERCIAL_SRC",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "commercial_src",
+  "position" : 44,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331310,
+  "width" : 340,
+  "cachedContents" : {
+    "non_null" : "9039",
+    "largest" : "SIDE OF TRUCK",
+    "null" : "1234439",
+    "top" : [ {
+      "item" : "SIDE OF TRUCK",
+      "count" : "3794"
+    }, {
+      "item" : "DRIVER",
+      "count" : "3359"
+    }, {
+      "item" : "PAPERS",
+      "count" : "1231"
+    }, {
+      "item" : "LOG BOOK",
+      "count" : "655"
+    } ],
+    "smallest" : "DRIVER",
+    "count" : "1243478",
+    "cardinality" : "4"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988798,
+  "name" : "GVWR",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "gvwr",
+  "position" : 45,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331311,
+  "width" : 148,
+  "cachedContents" : {
+    "non_null" : "7503",
+    "largest" : "UNKOWN",
+    "null" : "1235975",
+    "top" : [ {
+      "item" : "3",
+      "count" : "2401"
+    }, {
+      "item" : "80000",
+      "count" : "1189"
+    }, {
+      "item" : "2",
+      "count" : "1049"
+    }, {
+      "item" : "1",
+      "count" : "767"
+    }, {
+      "item" : "26000",
+      "count" : "211"
+    }, {
+      "item" : "73280",
+      "count" : "124"
+    }, {
+      "item" : "8000",
+      "count" : "114"
+    }, {
+      "item" : "80,000",
+      "count" : "99"
+    }, {
+      "item" : "16000",
+      "count" : "91"
+    }, {
+      "item" : "UNK",
+      "count" : "61"
+    }, {
+      "item" : "54999",
+      "count" : "58"
+    }, {
+      "item" : "12000",
+      "count" : "55"
+    }, {
+      "item" : "33000",
+      "count" : "49"
+    }, {
+      "item" : "32000",
+      "count" : "47"
+    }, {
+      "item" : "54000",
+      "count" : "46"
+    }, {
+      "item" : "42540",
+      "count" : "45"
+    }, {
+      "item" : "UNKNOWN",
+      "count" : "45"
+    }, {
+      "item" : "36000",
+      "count" : "34"
+    }, {
+      "item" : "40000",
+      "count" : "25"
+    }, {
+      "item" : "30000",
+      "count" : "24"
+    } ],
+    "smallest" : "0000",
+    "count" : "1243478",
+    "cardinality" : "421"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988799,
+  "name" : "CARRIER_NAME",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "carrier_name",
+  "position" : 46,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331312,
+  "width" : 244,
+  "cachedContents" : {
+    "non_null" : "12502",
+    "largest" : "ZWW TRUCKING INC",
+    "null" : "1230976",
+    "top" : [ {
+      "item" : "CHICAGO TRANSIT AUTHORITY",
+      "count" : "449"
+    }, {
+      "item" : "CTA",
+      "count" : "243"
+    }, {
+      "item" : "UNKNOWN",
+      "count" : "156"
+    }, {
+      "item" : "JB HUNT",
+      "count" : "115"
+    }, {
+      "item" : "CITY OF CHICAGO",
+      "count" : "106"
+    }, {
+      "item" : "UNK",
+      "count" : "72"
+    }, {
+      "item" : "JB HUNT TRANSPORT INC",
+      "count" : "57"
+    }, {
+      "item" : "PACE",
+      "count" : "57"
+    }, {
+      "item" : "FEDEX",
+      "count" : "51"
+    }, {
+      "item" : "PACE SUBURBAN BUS DIVISION",
+      "count" : "44"
+    }, {
+      "item" : "PENSKE TRUCK LEASING",
+      "count" : "41"
+    }, {
+      "item" : "UPS",
+      "count" : "40"
+    }, {
+      "item" : "RYDER TRUCK RENTAL",
+      "count" : "38"
+    }, {
+      "item" : "PENSKE",
+      "count" : "36"
+    }, {
+      "item" : "UHAUL",
+      "count" : "33"
+    }, {
+      "item" : "AMAZON",
+      "count" : "33"
+    }, {
+      "item" : "JB HUNT TRANSPORT",
+      "count" : "30"
+    }, {
+      "item" : "U-HAUL",
+      "count" : "29"
+    }, {
+      "item" : "SCHNEIDER NATIONAL CARRIERS INC",
+      "count" : "27"
+    }, {
+      "item" : "AM BUS COMPANY",
+      "count" : "25"
+    } ],
+    "smallest" : "02428 RYDER TRUCK RENTAL",
+    "count" : "1243478",
+    "cardinality" : "8189"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988800,
+  "name" : "CARRIER_STATE",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "carrier_state",
+  "position" : 47,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331313,
+  "width" : 292,
+  "cachedContents" : {
+    "non_null" : "11790",
+    "largest" : "XX",
+    "null" : "1231688",
+    "top" : [ {
+      "item" : "IL",
+      "count" : "7460"
+    }, {
+      "item" : "IN",
+      "count" : "992"
+    }, {
+      "item" : "WI",
+      "count" : "407"
+    }, {
+      "item" : "TX",
+      "count" : "230"
+    }, {
+      "item" : "MI",
+      "count" : "217"
+    }, {
+      "item" : "OH",
+      "count" : "201"
+    }, {
+      "item" : "PA",
+      "count" : "188"
+    }, {
+      "item" : "IA",
+      "count" : "177"
+    }, {
+      "item" : "FL",
+      "count" : "158"
+    }, {
+      "item" : "AZ",
+      "count" : "155"
+    }, {
+      "item" : "MN",
+      "count" : "141"
+    }, {
+      "item" : "TN",
+      "count" : "133"
+    }, {
+      "item" : "MO",
+      "count" : "127"
+    }, {
+      "item" : "XX",
+      "count" : "126"
+    }, {
+      "item" : "AR",
+      "count" : "124"
+    }, {
+      "item" : "NB",
+      "count" : "112"
+    }, {
+      "item" : "GA",
+      "count" : "102"
+    }, {
+      "item" : "CA",
+      "count" : "91"
+    }, {
+      "item" : "OK",
+      "count" : "87"
+    }, {
+      "item" : "NC",
+      "count" : "61"
+    } ],
+    "smallest" : "AL",
+    "count" : "1243478",
+    "cardinality" : "50"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988801,
+  "name" : "CARRIER_CITY",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "carrier_city",
+  "position" : 48,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331314,
+  "width" : 244,
+  "cachedContents" : {
+    "non_null" : "11579",
+    "largest" : "ZIONSVILLE",
+    "null" : "1231899",
+    "top" : [ {
+      "item" : "CHICAGO",
+      "count" : "3019"
+    }, {
+      "item" : "GARY",
+      "count" : "165"
+    }, {
+      "item" : "NOBLESVILLE",
+      "count" : "138"
+    }, {
+      "item" : "INDIANAPOLIS",
+      "count" : "125"
+    }, {
+      "item" : "ARLINGTON HEIGHTS",
+      "count" : "118"
+    }, {
+      "item" : "LOWELL",
+      "count" : "116"
+    }, {
+      "item" : "SKOKIE",
+      "count" : "113"
+    }, {
+      "item" : "READING",
+      "count" : "112"
+    }, {
+      "item" : "DES PLAINES",
+      "count" : "105"
+    }, {
+      "item" : "CICERO",
+      "count" : "104"
+    }, {
+      "item" : "ELK GROVE VILLAGE",
+      "count" : "100"
+    }, {
+      "item" : "PHOENIX",
+      "count" : "91"
+    }, {
+      "item" : "ADDISON",
+      "count" : "90"
+    }, {
+      "item" : "JOLIET",
+      "count" : "72"
+    }, {
+      "item" : "BRIDGEVIEW",
+      "count" : "67"
+    }, {
+      "item" : "BENSENVILLE",
+      "count" : "64"
+    }, {
+      "item" : "MARKHAM",
+      "count" : "62"
+    }, {
+      "item" : "MELROSE PARK",
+      "count" : "61"
+    }, {
+      "item" : "OAKBROOK TERRACE",
+      "count" : "61"
+    }, {
+      "item" : "MIAMI",
+      "count" : "61"
+    } ],
+    "smallest" : "-",
+    "count" : "1243478",
+    "cardinality" : "1748"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988802,
+  "name" : "HAZMAT_PLACARDS_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "hazmat_placards_i",
+  "position" : 49,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331315,
+  "width" : 304,
+  "cachedContents" : {
+    "non_null" : "258",
+    "largest" : "Y",
+    "null" : "1243220",
+    "top" : [ {
+      "item" : "N",
+      "count" : "167"
+    }, {
+      "item" : "Y",
+      "count" : "91"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988803,
+  "name" : "HAZMAT_NAME",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "hazmat_name",
+  "position" : 50,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331316,
+  "width" : 232,
+  "cachedContents" : {
+    "non_null" : "50",
+    "largest" : "TETRAFLUOROETHANE",
+    "null" : "1243428",
+    "top" : [ {
+      "item" : "GASOLINE",
+      "count" : "5"
+    }, {
+      "item" : "FLAMMABLE LIQUID",
+      "count" : "3"
+    }, {
+      "item" : "CORROSIVE",
+      "count" : "3"
+    }, {
+      "item" : "PROPANE",
+      "count" : "3"
+    }, {
+      "item" : "FLAMMABLE",
+      "count" : "3"
+    }, {
+      "item" : "OXIDIZER",
+      "count" : "2"
+    }, {
+      "item" : "FLAMABLE",
+      "count" : "2"
+    }, {
+      "item" : "NITROGEN",
+      "count" : "2"
+    }, {
+      "item" : "FLAMMABLE GAS",
+      "count" : "1"
+    }, {
+      "item" : "FLAMMABLE LIQUIDS",
+      "count" : "1"
+    }, {
+      "item" : "FLAMMABLE TREE",
+      "count" : "1"
+    }, {
+      "item" : "FUEL OIL",
+      "count" : "1"
+    }, {
+      "item" : "GAS AND DIESEL",
+      "count" : "1"
+    }, {
+      "item" : "GASOLINE/DIESEL FUEL",
+      "count" : "1"
+    }, {
+      "item" : "GASOLINE/PETROL",
+      "count" : "1"
+    }, {
+      "item" : "HOT",
+      "count" : "1"
+    }, {
+      "item" : "INTEGRAL SLEEPER",
+      "count" : "1"
+    }, {
+      "item" : "LIQUID NITROGEN",
+      "count" : "1"
+    }, {
+      "item" : "MEDICAL WASTE",
+      "count" : "1"
+    }, {
+      "item" : "NAPHTHALENE",
+      "count" : "1"
+    } ],
+    "smallest" : "1203",
+    "count" : "1243478",
+    "cardinality" : "35"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988804,
+  "name" : "UN_NO",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "un_no",
+  "position" : 51,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331317,
+  "width" : 160,
+  "cachedContents" : {
+    "non_null" : "465",
+    "largest" : "UNKN",
+    "null" : "1243013",
+    "top" : [ {
+      "item" : "UNK",
+      "count" : "72"
+    }, {
+      "item" : "1203",
+      "count" : "26"
+    }, {
+      "item" : "1993",
+      "count" : "7"
+    }, {
+      "item" : "1075",
+      "count" : "5"
+    }, {
+      "item" : "DNA",
+      "count" : "4"
+    }, {
+      "item" : "5178",
+      "count" : "4"
+    }, {
+      "item" : "NONE",
+      "count" : "4"
+    }, {
+      "item" : "2187",
+      "count" : "3"
+    }, {
+      "item" : "N/A",
+      "count" : "3"
+    }, {
+      "item" : "1977",
+      "count" : "3"
+    }, {
+      "item" : "0000",
+      "count" : "3"
+    }, {
+      "item" : "3082",
+      "count" : "2"
+    }, {
+      "item" : "PB90",
+      "count" : "2"
+    }, {
+      "item" : "1450",
+      "count" : "2"
+    }, {
+      "item" : "1933",
+      "count" : "2"
+    }, {
+      "item" : "1073",
+      "count" : "2"
+    }, {
+      "item" : "UNKN",
+      "count" : "2"
+    }, {
+      "item" : "2789",
+      "count" : "2"
+    }, {
+      "item" : "2021",
+      "count" : "2"
+    }, {
+      "item" : "1271",
+      "count" : "2"
+    } ],
+    "smallest" : "0000",
+    "count" : "1243478",
+    "cardinality" : "326"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988805,
+  "name" : "HAZMAT_PRESENT_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "hazmat_present_i",
+  "position" : 52,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331318,
+  "width" : 292,
+  "cachedContents" : {
+    "non_null" : "9645",
+    "largest" : "Y",
+    "null" : "1233833",
+    "top" : [ {
+      "item" : "N",
+      "count" : "8972"
+    }, {
+      "item" : "U",
+      "count" : "658"
+    }, {
+      "item" : "Y",
+      "count" : "15"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "3"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988806,
+  "name" : "HAZMAT_REPORT_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "hazmat_report_i",
+  "position" : 53,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331319,
+  "width" : 280,
+  "cachedContents" : {
+    "non_null" : "9352",
+    "largest" : "Y",
+    "null" : "1234126",
+    "top" : [ {
+      "item" : "N",
+      "count" : "8110"
+    }, {
+      "item" : "U",
+      "count" : "1232"
+    }, {
+      "item" : "Y",
+      "count" : "10"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "3"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988807,
+  "name" : "HAZMAT_REPORT_NO",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "hazmat_report_no",
+  "position" : 54,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331320,
+  "width" : 292,
+  "cachedContents" : {
+    "non_null" : "1",
+    "largest" : "JE106328",
+    "null" : "1243477",
+    "top" : [ {
+      "item" : "JE106328",
+      "count" : "1"
+    } ],
+    "smallest" : "JE106328",
+    "count" : "1243478",
+    "cardinality" : "1"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988808,
+  "name" : "MCS_REPORT_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "mcs_report_i",
+  "position" : 55,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331321,
+  "width" : 244,
+  "cachedContents" : {
+    "non_null" : "9402",
+    "largest" : "Y",
+    "null" : "1234076",
+    "top" : [ {
+      "item" : "N",
+      "count" : "7496"
+    }, {
+      "item" : "U",
+      "count" : "1897"
+    }, {
+      "item" : "Y",
+      "count" : "9"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "3"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988809,
+  "name" : "MCS_REPORT_NO",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "mcs_report_no",
+  "position" : 56,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331323,
+  "width" : 256,
+  "cachedContents" : {
+    "non_null" : "6",
+    "largest" : "UNKNOWN",
+    "null" : "1243472",
+    "top" : [ {
+      "item" : "3284167073",
+      "count" : "1"
+    }, {
+      "item" : "47783026",
+      "count" : "1"
+    }, {
+      "item" : "52748916",
+      "count" : "1"
+    }, {
+      "item" : "8253",
+      "count" : "1"
+    }, {
+      "item" : "JA413636",
+      "count" : "1"
+    }, {
+      "item" : "UNKNOWN",
+      "count" : "1"
+    } ],
+    "smallest" : "3284167073",
+    "count" : "1243478",
+    "cardinality" : "6"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988810,
+  "name" : "HAZMAT_VIO_CAUSE_CRASH_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "hazmat_vio_cause_crash_i",
+  "position" : 57,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331326,
+  "width" : 388,
+  "cachedContents" : {
+    "non_null" : "9501",
+    "largest" : "Y",
+    "null" : "1233977",
+    "top" : [ {
+      "item" : "N",
+      "count" : "8694"
+    }, {
+      "item" : "U",
+      "count" : "799"
+    }, {
+      "item" : "Y",
+      "count" : "8"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "3"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988811,
+  "name" : "MCS_VIO_CAUSE_CRASH_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "mcs_vio_cause_crash_i",
+  "position" : 58,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331328,
+  "width" : 352,
+  "cachedContents" : {
+    "non_null" : "9328",
+    "largest" : "Y",
+    "null" : "1234150",
+    "top" : [ {
+      "item" : "N",
+      "count" : "7752"
+    }, {
+      "item" : "U",
+      "count" : "1561"
+    }, {
+      "item" : "Y",
+      "count" : "15"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "3"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988812,
+  "name" : "IDOT_PERMIT_NO",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "idot_permit_no",
+  "position" : 59,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331330,
+  "width" : 268,
+  "cachedContents" : {
+    "non_null" : "767",
+    "largest" : "ZV69661",
+    "null" : "1242711",
+    "top" : [ {
+      "item" : "UNK",
+      "count" : "101"
+    }, {
+      "item" : "UNKNOWN",
+      "count" : "80"
+    }, {
+      "item" : "DNA",
+      "count" : "15"
+    }, {
+      "item" : "0080806",
+      "count" : "12"
+    }, {
+      "item" : "N/A",
+      "count" : "9"
+    }, {
+      "item" : "264184",
+      "count" : "7"
+    }, {
+      "item" : "NA",
+      "count" : "4"
+    }, {
+      "item" : "1762064",
+      "count" : "4"
+    }, {
+      "item" : "NONE",
+      "count" : "4"
+    }, {
+      "item" : "065769",
+      "count" : "3"
+    }, {
+      "item" : "540864",
+      "count" : "3"
+    }, {
+      "item" : "693463",
+      "count" : "3"
+    }, {
+      "item" : "88722",
+      "count" : "3"
+    }, {
+      "item" : "DT3710",
+      "count" : "2"
+    }, {
+      "item" : "0154237",
+      "count" : "2"
+    }, {
+      "item" : "368962",
+      "count" : "2"
+    }, {
+      "item" : "0963300",
+      "count" : "2"
+    }, {
+      "item" : "24491",
+      "count" : "2"
+    }, {
+      "item" : "74432",
+      "count" : "2"
+    }, {
+      "item" : "UNKOWN",
+      "count" : "2"
+    } ],
+    "smallest" : "0",
+    "count" : "1243478",
+    "cardinality" : "507"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988813,
+  "name" : "WIDE_LOAD_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "wide_load_i",
+  "position" : 60,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331332,
+  "width" : 232,
+  "cachedContents" : {
+    "non_null" : "114",
+    "largest" : "Y",
+    "null" : "1243364",
+    "top" : [ {
+      "item" : "Y",
+      "count" : "73"
+    }, {
+      "item" : "N",
+      "count" : "41"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988814,
+  "name" : "TRAILER1_WIDTH",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "trailer1_width",
+  "position" : 61,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331338,
+  "width" : 340,
+  "cachedContents" : {
+    "non_null" : "2475",
+    "largest" : "97-102",
+    "null" : "1241003",
+    "top" : [ {
+      "item" : "0-96",
+      "count" : "1541"
+    }, {
+      "item" : "97-102",
+      "count" : "571"
+    }, {
+      "item" : ">102",
+      "count" : "363"
+    } ],
+    "smallest" : "0-96",
+    "count" : "1243478",
+    "cardinality" : "3"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988815,
+  "name" : "TRAILER2_WIDTH",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "trailer2_width",
+  "position" : 62,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331342,
+  "width" : 340,
+  "cachedContents" : {
+    "non_null" : "287",
+    "largest" : "97-102",
+    "null" : "1243191",
+    "top" : [ {
+      "item" : "0-96",
+      "count" : "166"
+    }, {
+      "item" : ">102",
+      "count" : "63"
+    }, {
+      "item" : "97-102",
+      "count" : "58"
+    } ],
+    "smallest" : "0-96",
+    "count" : "1243478",
+    "cardinality" : "3"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988816,
+  "name" : "TRAILER1_LENGTH",
+  "dataTypeName" : "number",
+  "description" : "",
+  "fieldName" : "trailer1_length",
+  "position" : 63,
+  "renderTypeName" : "number",
+  "tableColumnId" : 59331345,
+  "width" : 280,
+  "cachedContents" : {
+    "non_null" : "2041",
+    "largest" : "200",
+    "null" : "1241437",
+    "top" : [ {
+      "item" : "53",
+      "count" : "1132"
+    }, {
+      "item" : "48",
+      "count" : "116"
+    }, {
+      "item" : "40",
+      "count" : "113"
+    }, {
+      "item" : "30",
+      "count" : "59"
+    }, {
+      "item" : "20",
+      "count" : "48"
+    }, {
+      "item" : "50",
+      "count" : "43"
+    }, {
+      "item" : "52",
+      "count" : "40"
+    }, {
+      "item" : "45",
+      "count" : "32"
+    }, {
+      "item" : "28",
+      "count" : "30"
+    }, {
+      "item" : "35",
+      "count" : "26"
+    }, {
+      "item" : "25",
+      "count" : "25"
+    }, {
+      "item" : "60",
+      "count" : "21"
+    }, {
+      "item" : "24",
+      "count" : "20"
+    }, {
+      "item" : "26",
+      "count" : "18"
+    }, {
+      "item" : "80",
+      "count" : "17"
+    }, {
+      "item" : "18",
+      "count" : "14"
+    }, {
+      "item" : "22",
+      "count" : "14"
+    }, {
+      "item" : "96",
+      "count" : "13"
+    }, {
+      "item" : "15",
+      "count" : "13"
+    }, {
+      "item" : "56",
+      "count" : "12"
+    } ],
+    "smallest" : "1",
+    "count" : "1243478",
+    "cardinality" : "81"
+  },
+  "format" : {
+    "precisionStyle" : "standard",
+    "decimalSeparator" : ".",
+    "groupSeparator" : ",",
+    "align" : "right"
+  }
+}, {
+  "id" : 450988817,
+  "name" : "TRAILER2_LENGTH",
+  "dataTypeName" : "number",
+  "description" : "",
+  "fieldName" : "trailer2_length",
+  "position" : 64,
+  "renderTypeName" : "number",
+  "tableColumnId" : 59331347,
+  "width" : 280,
+  "cachedContents" : {
+    "non_null" : "55",
+    "largest" : "123",
+    "null" : "1243423",
+    "top" : [ {
+      "item" : "53",
+      "count" : "14"
+    }, {
+      "item" : "60",
+      "count" : "3"
+    }, {
+      "item" : "25",
+      "count" : "3"
+    }, {
+      "item" : "96",
+      "count" : "3"
+    }, {
+      "item" : "28",
+      "count" : "2"
+    }, {
+      "item" : "40",
+      "count" : "2"
+    }, {
+      "item" : "48",
+      "count" : "2"
+    }, {
+      "item" : "12",
+      "count" : "2"
+    }, {
+      "item" : "14",
+      "count" : "2"
+    }, {
+      "item" : "27",
+      "count" : "1"
+    }, {
+      "item" : "30",
+      "count" : "1"
+    }, {
+      "item" : "33",
+      "count" : "1"
+    }, {
+      "item" : "43",
+      "count" : "1"
+    }, {
+      "item" : "45",
+      "count" : "1"
+    }, {
+      "item" : "50",
+      "count" : "1"
+    }, {
+      "item" : "55",
+      "count" : "1"
+    }, {
+      "item" : "65",
+      "count" : "1"
+    }, {
+      "item" : "73",
+      "count" : "1"
+    }, {
+      "item" : "90",
+      "count" : "1"
+    }, {
+      "item" : "99",
+      "count" : "1"
+    } ],
+    "smallest" : "2",
+    "count" : "1243478",
+    "cardinality" : "31"
+  },
+  "format" : {
+    "precisionStyle" : "standard",
+    "decimalSeparator" : ".",
+    "groupSeparator" : ",",
+    "align" : "right"
+  }
+}, {
+  "id" : 450988818,
+  "name" : "TOTAL_VEHICLE_LENGTH",
+  "dataTypeName" : "number",
+  "description" : "",
+  "fieldName" : "total_vehicle_length",
+  "position" : 65,
+  "renderTypeName" : "number",
+  "tableColumnId" : 59331350,
+  "width" : 340,
+  "cachedContents" : {
+    "non_null" : "2477",
+    "largest" : "999",
+    "null" : "1241001",
+    "top" : [ {
+      "item" : "65",
+      "count" : "235"
+    }, {
+      "item" : "53",
+      "count" : "227"
+    }, {
+      "item" : "40",
+      "count" : "179"
+    }, {
+      "item" : "75",
+      "count" : "175"
+    }, {
+      "item" : "60",
+      "count" : "139"
+    }, {
+      "item" : "70",
+      "count" : "114"
+    }, {
+      "item" : "63",
+      "count" : "107"
+    }, {
+      "item" : "30",
+      "count" : "96"
+    }, {
+      "item" : "20",
+      "count" : "86"
+    }, {
+      "item" : "25",
+      "count" : "75"
+    }, {
+      "item" : "26",
+      "count" : "74"
+    }, {
+      "item" : "68",
+      "count" : "69"
+    }, {
+      "item" : "35",
+      "count" : "60"
+    }, {
+      "item" : "50",
+      "count" : "59"
+    }, {
+      "item" : "45",
+      "count" : "43"
+    }, {
+      "item" : "72",
+      "count" : "41"
+    }, {
+      "item" : "73",
+      "count" : "40"
+    }, {
+      "item" : "15",
+      "count" : "39"
+    }, {
+      "item" : "80",
+      "count" : "34"
+    }, {
+      "item" : "24",
+      "count" : "31"
+    } ],
+    "smallest" : "1",
+    "count" : "1243478",
+    "cardinality" : "121"
+  },
+  "format" : {
+    "precisionStyle" : "standard",
+    "decimalSeparator" : ".",
+    "groupSeparator" : ",",
+    "align" : "right"
+  }
+}, {
+  "id" : 450988819,
+  "name" : "AXLE_CNT",
+  "dataTypeName" : "number",
+  "description" : "",
+  "fieldName" : "axle_cnt",
+  "position" : 66,
+  "renderTypeName" : "number",
+  "tableColumnId" : 59331353,
+  "width" : 196,
+  "cachedContents" : {
+    "non_null" : "3619",
+    "largest" : "26009",
+    "null" : "1239859",
+    "top" : [ {
+      "item" : "5",
+      "count" : "1147"
+    }, {
+      "item" : "2",
+      "count" : "1128"
+    }, {
+      "item" : "3",
+      "count" : "810"
+    }, {
+      "item" : "6",
+      "count" : "241"
+    }, {
+      "item" : "4",
+      "count" : "183"
+    }, {
+      "item" : "1",
+      "count" : "48"
+    }, {
+      "item" : "8",
+      "count" : "23"
+    }, {
+      "item" : "7",
+      "count" : "13"
+    }, {
+      "item" : "18",
+      "count" : "9"
+    }, {
+      "item" : "16",
+      "count" : "4"
+    }, {
+      "item" : "9",
+      "count" : "3"
+    }, {
+      "item" : "10",
+      "count" : "2"
+    }, {
+      "item" : "26009",
+      "count" : "1"
+    }, {
+      "item" : "12",
+      "count" : "1"
+    }, {
+      "item" : "20",
+      "count" : "1"
+    }, {
+      "item" : "52",
+      "count" : "1"
+    }, {
+      "item" : "53",
+      "count" : "1"
+    }, {
+      "item" : "55",
+      "count" : "1"
+    }, {
+      "item" : "77",
+      "count" : "1"
+    }, {
+      "item" : "99",
+      "count" : "1"
+    } ],
+    "smallest" : "1",
+    "count" : "1243478",
+    "cardinality" : "20"
+  },
+  "format" : {
+    "precisionStyle" : "standard",
+    "decimalSeparator" : ".",
+    "groupSeparator" : ",",
+    "align" : "right"
+  }
+}, {
+  "id" : 450988820,
+  "name" : "VEHICLE_CONFIG",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "vehicle_config",
+  "position" : 67,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331358,
+  "width" : 340,
+  "cachedContents" : {
+    "non_null" : "10875",
+    "largest" : "UNKNOWN HEAVY TRUCK",
+    "null" : "1232603",
+    "top" : [ {
+      "item" : "TRACTOR/SEMI-TRAILER",
+      "count" : "4273"
+    }, {
+      "item" : "SINGLE UNIT TRUCK, 2 AXLES, 6 TIRES",
+      "count" : "2173"
+    }, {
+      "item" : "BUS",
+      "count" : "1688"
+    }, {
+      "item" : "TRUCK/TRACTOR",
+      "count" : "880"
+    }, {
+      "item" : "TRUCK/TRAILER",
+      "count" : "729"
+    }, {
+      "item" : "UNKNOWN HEAVY TRUCK",
+      "count" : "610"
+    }, {
+      "item" : "SINGLE UNIT TRUCK, 3 OR MORE AXLES",
+      "count" : "492"
+    }, {
+      "item" : "TRACTOR/DOUBLES",
+      "count" : "30"
+    } ],
+    "smallest" : "BUS",
+    "count" : "1243478",
+    "cardinality" : "8"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988821,
+  "name" : "CARGO_BODY_TYPE",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "cargo_body_type",
+  "position" : 68,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331362,
+  "width" : 352,
+  "cachedContents" : {
+    "non_null" : "10413",
+    "largest" : "VAN/ENCLOSED BOX",
+    "null" : "1233065",
+    "top" : [ {
+      "item" : "VAN/ENCLOSED BOX",
+      "count" : "4596"
+    }, {
+      "item" : "OTHER",
+      "count" : "2329"
+    }, {
+      "item" : "BUS",
+      "count" : "1629"
+    }, {
+      "item" : "FLATBED",
+      "count" : "795"
+    }, {
+      "item" : "DUMP",
+      "count" : "372"
+    }, {
+      "item" : "GARBAGE/REFUSE",
+      "count" : "301"
+    }, {
+      "item" : "TANK",
+      "count" : "202"
+    }, {
+      "item" : "CONCRETE MIXER",
+      "count" : "96"
+    }, {
+      "item" : "AUTO TRANSPORTER",
+      "count" : "93"
+    } ],
+    "smallest" : "AUTO TRANSPORTER",
+    "count" : "1243478",
+    "cardinality" : "9"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988822,
+  "name" : "LOAD_TYPE",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "load_type",
+  "position" : 69,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331367,
+  "width" : 280,
+  "cachedContents" : {
+    "non_null" : "9940",
+    "largest" : "UNKNOWN",
+    "null" : "1233538",
+    "top" : [ {
+      "item" : "OTHER",
+      "count" : "5469"
+    }, {
+      "item" : "UNKNOWN",
+      "count" : "3870"
+    }, {
+      "item" : "CONSTRUCTION EQUIPMENT",
+      "count" : "350"
+    }, {
+      "item" : "BUILDING MATERIALS",
+      "count" : "188"
+    }, {
+      "item" : "STEEL COILS",
+      "count" : "44"
+    }, {
+      "item" : "FARM EQUIPMENT",
+      "count" : "19"
+    } ],
+    "smallest" : "BUILDING MATERIALS",
+    "count" : "1243478",
+    "cardinality" : "6"
+  },
+  "format" : {
+    "align" : "left"
+  }
+}, {
+  "id" : 450988823,
+  "name" : "HAZMAT_OUT_OF_SERVICE_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "hazmat_out_of_service_i",
+  "position" : 70,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331371,
+  "width" : 376,
+  "cachedContents" : {
+    "non_null" : "9063",
+    "largest" : "Y",
+    "null" : "1234415",
+    "top" : [ {
+      "item" : "N",
+      "count" : "9052"
+    }, {
+      "item" : "Y",
+      "count" : "11"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988824,
+  "name" : "MCS_OUT_OF_SERVICE_I",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "mcs_out_of_service_i",
+  "position" : 71,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331372,
+  "width" : 340,
+  "cachedContents" : {
+    "non_null" : "9308",
+    "largest" : "Y",
+    "null" : "1234170",
+    "top" : [ {
+      "item" : "N",
+      "count" : "9268"
+    }, {
+      "item" : "Y",
+      "count" : "40"
+    } ],
+    "smallest" : "N",
+    "count" : "1243478",
+    "cardinality" : "2"
+  },
+  "format" : {
+    "align" : "right"
+  }
+}, {
+  "id" : 450988825,
+  "name" : "HAZMAT_CLASS",
+  "dataTypeName" : "text",
+  "description" : "",
+  "fieldName" : "hazmat_class",
+  "position" : 72,
+  "renderTypeName" : "text",
+  "tableColumnId" : 59331374,
+  "width" : 316,
+  "cachedContents" : {
+    "non_null" : "884",
+    "largest" : "POISON (TOXIC) OR POISON INHALATION HAZARD",
+    "null" : "1242594",
+    "top" : [ {
+      "item" : "MISCELLANEOUS",
+      "count" : "771"
+    }, {
+      "item" : "FLAMMABLE OR COMBUSTIBLE LIQUID",
+      "count" : "55"
+    }, {
+      "item" : "GASES",
+      "count" : "22"
+    }, {
+      "item" : "EXPLOSIVES",
+      "count" : "17"
+    }, {
+      "item" : "CORROSIVE",
+      "count" : "12"
+    }, {
+      "item" : "OXIDIZER OR ORGANIC PEROXIDE",
+      "count" : "3"
+    }, {
+      "item" : "FLAMMABLE SOLID, SPONTANEOUSLY COMBUSTIBLE, OR DANGEROUS WHEN WET",
+      "count" : "2"
+    }, {
+      "item" : "POISON (TOXIC) OR POISON INHALATION HAZARD",
+      "count" : "2"
+    } ],
+    "smallest" : "CORROSIVE",
+    "count" : "1243478",
+    "cardinality" : "8"
+  },
+  "format" : {
+    "align" : "left"
+  }
+} ]
