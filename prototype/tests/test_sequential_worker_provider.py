@@ -8,9 +8,15 @@ class _StubSequentialProvider(SequentialWorkerProvider):
         super().__init__(base_url="https://legacy.example", **kwargs)
         self.existing_ids = existing_ids
         self.calls: list[int] = []
+        self.inflight = 0
+        self.max_seen_inflight = 0
 
     async def fetch_single_report(self, report_id: int):
+        self.inflight += 1
+        self.max_seen_inflight = max(self.max_seen_inflight, self.inflight)
+        await asyncio.sleep(0)
         self.calls.append(report_id)
+        self.inflight -= 1
         if report_id in self.existing_ids:
             return {
                 "report_id": str(report_id),
@@ -60,3 +66,29 @@ def test_fetch_requires_range_configuration():
         raised = True
 
     assert raised is True
+
+
+def test_scan_ranges_distributed_collects_from_multiple_ranges():
+    provider = _StubSequentialProvider(existing_ids={10, 12, 20, 21}, rate_limit=1000)
+
+    rows = asyncio.run(
+        provider.scan_ranges_distributed(
+            [(10, 13), (20, 22)],
+            max_concurrent_workers=2,
+        )
+    )
+
+    assert sorted(row["report_id"] for row in rows) == ["10", "12", "20", "21"]
+
+
+def test_scan_ranges_distributed_respects_worker_cap():
+    provider = _StubSequentialProvider(existing_ids={1, 2, 3, 4}, rate_limit=1000)
+
+    asyncio.run(
+        provider.scan_ranges_distributed(
+            [(1, 3), (3, 5)],
+            max_concurrent_workers=1,
+        )
+    )
+
+    assert provider.max_seen_inflight == 1

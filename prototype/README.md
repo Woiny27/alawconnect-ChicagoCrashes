@@ -46,15 +46,65 @@ pytest
 ## 📊 Available Providers
 
 - `chicago_crashes` - Chicago traffic crash data
+- `detroit_provider` - Detroit crash records via ArcGIS feature service (target: https://data.detroitmi.gov/datasets/traffic-crashes-dashboard)
+- `lapd_provider` - LAPD public lookup automation via BuyCrash form submission
+- `legacy_portal_provider` - generic aiohttp + BeautifulSoup form automation for legacy portal lookups
 - `nyc_provider` - NYC crash data via Socrata API (`aiohttp`)
 - `usgs_earthquakes` - USGS earthquake data
 - (Extend with custom providers)
+
+Legacy portal quick-start example (Pennsylvania PSP):
+
+```python
+from src.providers.legacy_portal_provider import LegacyPortalProvider
+
+provider = LegacyPortalProvider(
+    {
+        "search_url": "https://appsca.pwp.pa.gov/psp/crash-reports/",
+        "agency": "Pennsylvania State Police",
+        "tokens_per_second": 2,
+        "accident_ids": ["PA 2018-123456"],
+    }
+)
+
+rows = provider.fetch()
+```
+
+Detroit provider quick-start:
+
+```python
+from src.providers.detroit_provider import DetroitProvider
+
+provider = DetroitProvider()
+rows = provider.fetch(limit=100)
+```
 
 ## 🧪 Testing
 
 ```bash
 pytest -v
 pytest --cov=src
+```
+
+Manual testing seeds and extraction model notes are tracked in:
+- `MANUAL_TESTING.md`
+
+Machine-readable jurisdiction/provider profiles are tracked in:
+- `jurisdictions.yaml`
+
+Example profile-based legacy provider setup:
+
+```python
+from src.providers.legacy_portal_provider import LegacyPortalProvider
+
+provider = LegacyPortalProvider.from_profile("pennsylvania_state_psp")
+rows = provider.fetch(limit=10)
+```
+
+Run a profile directly from CLI:
+
+```bash
+python -m src.providers.run_profile pennsylvania_state_psp --limit 10 --pretty
 ```
 
 ## 📝 Development
@@ -80,7 +130,8 @@ user-agents and proxies between requests.
 To support checking thousands of random accident IDs per hour across Midwest jurisdictions, the prototype includes:
 
 - Distributed Workers: modular `Provider` architecture makes city-specific connectors easy to add.
-- Smart Rate Limiting: a token bucket limiter in `src/utils/limiter.py` smooths request bursts before they hit legacy vendor portals.
+- Distributed Sequential Workers: `SequentialWorkerProvider.scan_ranges_distributed(...)` lets you run multiple random ID ranges concurrently while preserving sequential checks inside each range.
+- Token Bucket Throttling: `src/utils/limiter.py` smooths request spikes so your IP is less likely to be flagged as bot traffic, which is especially important for legacy systems like St. Louis and Detroit portals.
 - Privacy-First Joins: sensitive contact data from the private Google Sheet is merged locally and never committed to GitHub.
 
 Set these optional environment variables before running the pipeline:

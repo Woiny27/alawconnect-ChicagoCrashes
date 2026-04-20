@@ -1,0 +1,51 @@
+version: 1
+jurisdictions:
+  pennsylvania_state_psp:
+    agency: Pennsylvania State Police
+    providers:
+      legacy_portal:
+        search_url: https://appsca.pwp.pa.gov/psp/crash-reports/
+        tokens_per_second: 2
+        report_field_name: IncidentNumber
+        csrf_field_name: __RequestVerificationToken
+    manual_test_seeds:
+      - report_id: "PA 2018-123456"
+        note: Example format from PSP portal help text.
+
+  st_louis_missouri_mshp:
+    agency: Missouri State Highway Patrol
+    providers:
+      legacy_portal:
+        search_url: ""
+        tokens_per_second: 2
+    manual_test_seeds:
+      - report_id: "250111396"
+        note: User-provided seed (Mar 15, 2026; New Madrid, Troop E).
+      - report_id: "250201258"
+        note: User-provided seed in active 2502xxxxx range.
+
+  detroit_arcgis:
+    agency: Detroit Traffic Crashes
+    providers:
+      api:
+        target_url: https://data.detroitmi.gov/datasets/traffic-crashes-dashboard
+        feature_service_url: https://services2.arcgis.com/qvkbeam7Wirps6zC/arcgis/rest/services/Traffic_Crashes/FeatureServer
+    manual_test_seeds:
+      - note: Rosa Parks Blvd fatal crash (Feb 22, 2026)
+      - note: Woodward Ave and E Adams Ave two-car crash (Apr 2026)
+
+  austin_tx:
+    agency: Austin Police Department
+    providers:
+      api:
+        target_url: ""
+    notes:
+      - Modern API/request portal reported for last 18 months.
+
+  phoenix_az:
+    agency: Phoenix Police Department
+    providers:
+      api:
+        target_url: ""
+    notes:
+      - Modern self-service portal reported as launched in March 2026.

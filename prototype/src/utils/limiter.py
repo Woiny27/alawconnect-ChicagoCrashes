@@ -7,11 +7,23 @@ from typing import Callable
 class RateLimiter:
     """Async fixed-window rate limiter for sequential scan loops."""
 
-    def __init__(self, rate_limit: float) -> None:
-        if rate_limit <= 0:
+    def __init__(
+        self,
+        rate_limit: float | None = None,
+        *,
+        tokens_per_second: float | None = None,
+    ) -> None:
+        if tokens_per_second is not None:
+            selected_rate = float(tokens_per_second)
+        elif rate_limit is not None:
+            selected_rate = float(rate_limit)
+        else:
+            raise ValueError("rate_limit or tokens_per_second must be provided")
+
+        if selected_rate <= 0:
             raise ValueError("rate_limit must be greater than 0")
 
-        self.rate_limit = float(rate_limit)
+        self.rate_limit = selected_rate
         self._interval = 1.0 / self.rate_limit
         self._lock = asyncio.Lock()
         self._next_allowed_at = 0.0
@@ -31,7 +43,7 @@ class RateLimiter:
 
 
 class TokenBucketLimiter:
-    """Simple token bucket limiter for smoothing outbound request traffic."""
+    """Simple token bucket limiter that smooths spikes to reduce bot-flag risk on legacy portals."""
 
     def __init__(
         self,
