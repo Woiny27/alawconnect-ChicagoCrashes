@@ -4,6 +4,8 @@ from typing import Any, Dict, Iterable, Optional
 
 import requests
 
+from src.utils.limiter import TokenBucketLimiter
+
 
 DEFAULT_USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
@@ -18,6 +20,7 @@ class WorkerProvider:
         proxies: Optional[Iterable[str]] = None,
         session: Optional[requests.sessions.Session] = None,
         max_attempts: int = 3,
+        limiter: Optional[TokenBucketLimiter] = None,
     ) -> None:
         ua_values = [value.strip() for value in (user_agents or []) if value.strip()]
         proxy_values = [value.strip() for value in (proxies or []) if value.strip()]
@@ -29,6 +32,10 @@ class WorkerProvider:
         self._proxy_cycle = cycle(proxy_values) if proxy_values else None
         self.session = session or requests.Session()
         self.max_attempts = max(1, max_attempts)
+        self.limiter = limiter or TokenBucketLimiter(
+            capacity=float(os.getenv("WORKER_RATE_LIMIT_CAPACITY", "10")),
+            refill_rate=float(os.getenv("WORKER_RATE_LIMIT_TOKENS_PER_SECOND", "2")),
+        )
 
     @classmethod
     def from_env(cls) -> "WorkerProvider":
@@ -39,6 +46,10 @@ class WorkerProvider:
             user_agents=user_agents.split(",") if user_agents else None,
             proxies=proxies.split(",") if proxies else None,
             max_attempts=int(os.getenv("WORKER_MAX_ATTEMPTS", "3")),
+            limiter=TokenBucketLimiter(
+                capacity=float(os.getenv("WORKER_RATE_LIMIT_CAPACITY", "10")),
+                refill_rate=float(os.getenv("WORKER_RATE_LIMIT_TOKENS_PER_SECOND", "2")),
+            ),
         )
 
     def _next_proxy(self) -> Optional[Dict[str, str]]:
@@ -56,6 +67,7 @@ class WorkerProvider:
         """GET with rotating identity; retries automatically on HTTP 429."""
         response: Optional[requests.Response] = None
         for _ in range(self.max_attempts):
+            self.limiter.acquire()
             headers = self._build_headers(kwargs.get("headers"))
             request_kwargs = dict(kwargs)
             request_kwargs["headers"] = headers

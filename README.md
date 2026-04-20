@@ -21,9 +21,33 @@ Overview
 
 A modular **data pipeline + AI-powered risk detection system** built with FastAPI, featuring plugin-based ingestion, ETL processing, and generative AI explanations for anomaly detection.
 
+## High-Volume Expansion Strategy
+
+To support checking thousands of random accident IDs per hour across Midwest jurisdictions, the prototype layer includes:
+
+- **Distributed Workers**: Modular `Provider` architecture for city-specific expansion.
+- **Smart Rate Limiting**: A token bucket limiter in `prototype/src/utils/limiter.py` smooths request bursts against legacy portals.
+- **Privacy-First Joins**: Sensitive contact data from the private sheet is merged locally and never uploaded to GitHub.
+
 Architecture Flow
 
 External API → Provider → ETL Pipeline → Risk Engine → GenAI Explanation → API Response
+
+## System Architecture
+
+```mermaid
+flowchart TD
+
+A[Jurisdiction Connectors] --> B[Raw Ingestion Layer]
+B --> C[Normalization Engine]
+C --> D[Deduplication + Matching]
+D --> E[Enrichment Layer]
+E --> F[Storage Layer]
+F --> G[Query / API / Analytics]
+```
+
+See full architecture: [docs/architecture.md](docs/architecture.md)
+
 Deployment Flow
 
 
@@ -131,3 +155,15 @@ Real contact numbers (phone numbers, names, addresses) are available in the priv
 Do not upload the raw sheet to GitHub due to privacy reasons.
 
 The prototype can merge public crash data with the contacts file locally using the `rd` column as the key.
+
+Safe local merge workflow:
+1. Download the private sheet as CSV and save it as contacts.csv.
+2. Place contacts.csv in prototype/data.
+3. Ensure the contacts file contains rd, or crash_id that can be mapped to rd.
+4. Run the local merger from prototype: python -m src.pipeline.merger.
+5. Review output in prototype/data/merged_output.csv.
+
+Privacy guardrails:
+- Keep real contacts only on your local machine.
+- Do not commit contacts.csv, data_private files, or any exported private contact data.
+- Share only redacted or synthetic samples in repository files.

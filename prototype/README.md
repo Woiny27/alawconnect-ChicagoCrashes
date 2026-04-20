@@ -74,18 +74,30 @@ class CustomProvider(BaseProvider):
 `ChicagoCrashesProvider` now uses a `WorkerProvider` for API calls and can rotate
 user-agents and proxies between requests.
 
+## 📈 High-Volume Expansion Strategy
+
+To support checking thousands of random accident IDs per hour across Midwest jurisdictions, the prototype includes:
+
+- Distributed Workers: modular `Provider` architecture makes city-specific connectors easy to add.
+- Smart Rate Limiting: a token bucket limiter in `src/utils/limiter.py` smooths request bursts before they hit legacy vendor portals.
+- Privacy-First Joins: sensitive contact data from the private Google Sheet is merged locally and never committed to GitHub.
+
 Set these optional environment variables before running the pipeline:
 
 ```bash
 export WORKER_USER_AGENTS="Mozilla/5.0 (...Chrome...),Mozilla/5.0 (...Safari...)"
 export WORKER_PROXIES="http://proxy1:8080,http://proxy2:8080"
 export WORKER_MAX_ATTEMPTS="4"
+export WORKER_RATE_LIMIT_CAPACITY="10"
+export WORKER_RATE_LIMIT_TOKENS_PER_SECOND="2"
 ```
 
 Notes:
 - `WORKER_USER_AGENTS`: comma-separated user-agent strings.
 - `WORKER_PROXIES`: comma-separated proxy URLs used round-robin.
 - `WORKER_MAX_ATTEMPTS`: retries for HTTP 429 responses.
+- `WORKER_RATE_LIMIT_CAPACITY`: max burst size before throttling.
+- `WORKER_RATE_LIMIT_TOKENS_PER_SECOND`: steady-state request rate.
 
 ## Contacts Data
 

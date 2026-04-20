@@ -155,6 +155,14 @@ class _StubSession:
         return self.responses.pop(0)
 
 
+class _StubLimiter:
+    def __init__(self):
+        self.calls = 0
+
+    def acquire(self, tokens=1.0):
+        self.calls += 1
+
+
 def test_worker_provider_rotates_user_agents_and_proxies():
     session = _StubSession([_StubResponse(200, [{"ok": True}]), _StubResponse(200, [{"ok": True}])])
     worker = WorkerProvider(
@@ -190,6 +198,16 @@ def test_worker_provider_retries_on_rate_limit_429():
     assert len(session.calls) == 2
     assert session.calls[0]["headers"]["User-Agent"] == "ua-1"
     assert session.calls[1]["headers"]["User-Agent"] == "ua-2"
+
+
+def test_worker_provider_uses_token_bucket_limiter_on_each_attempt():
+    session = _StubSession([_StubResponse(200, [{"ok": True}])])
+    limiter = _StubLimiter()
+    worker = WorkerProvider(session=session, max_attempts=1, limiter=limiter)
+
+    worker.get("https://example.com")
+
+    assert limiter.calls == 1
 
 
 def test_chicago_crashes_provider_uses_worker_provider_for_api_calls():
