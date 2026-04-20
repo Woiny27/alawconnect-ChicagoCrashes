@@ -1,5 +1,5 @@
 import requests
-from typing import Dict, List, Optional
+from typing import Any, Dict, List, Optional
 
 from .base import BaseProvider
 
@@ -13,7 +13,7 @@ class ChicagoProvider(BaseProvider):
     def __init__(self, url: str = _CRASHES_URL) -> None:
         self.url = url
 
-    def fetch(self, limit: Optional[int] = _DEFAULT_LIMIT) -> List[Dict[str, str]]:
+    def fetch(self, limit: Optional[int] = _DEFAULT_LIMIT) -> List[Dict[str, Any]]:
         """Fetch crash rows from the Socrata API.
 
         Args:
@@ -28,11 +28,18 @@ class ChicagoProvider(BaseProvider):
             params["$limit"] = limit
 
         response = requests.get(self.url, params=params, timeout=30)
-        response.raise_for_status()
+        try:
+            response.raise_for_status()
+        except requests.HTTPError as exc:
+            raise requests.HTTPError(
+                f"Chicago crashes API request failed (url={self.url}, "
+                f"status={response.status_code}): {exc}",
+                response=response,
+            ) from exc
         return response.json()
 
 
-def build_rd_no_map(rows: List[Dict[str, str]]) -> Dict[str, str]:
+def build_rd_no_map(rows: List[Dict[str, Any]]) -> Dict[str, str]:
     """Build a mapping from ``rd_no`` to ``crash_record_id`` (crash join ID).
 
     The Chicago crash dataset exposes ``rd_no`` as the police Records Division
