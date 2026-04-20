@@ -1,11 +1,18 @@
-import sys
-import os
+import requests
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
-
-from providers.usgs_earthquakes import USGSEarthquakeProvider
 from providers.worker import WorkerProvider
 
 
+class _SyncUSGSProvider:
+    """Synchronous USGS earthquake provider using requests."""
+
+    URL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
+
+    def fetch(self):
+        response = requests.get(self.URL, timeout=10)
+        response.raise_for_status()
+        return response.json()
+
+
 def register(registry):
-    registry.register_provider("usgs_worker", WorkerProvider(USGSEarthquakeProvider()))
+    registry.register_provider("usgs_worker", WorkerProvider(_SyncUSGSProvider()))
