@@ -1,6 +1,13 @@
 from typing import Dict, Iterable, List
 
 
+RISK_WEIGHTS = {
+    "missing_location": 0.4,
+    "severity": 0.4,
+    "source_weight": 0.2,
+}
+
+
 class RiskEngine:
     """Simple magnitude-based risk scoring for normalized records."""
 

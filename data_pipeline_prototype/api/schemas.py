@@ -34,3 +34,29 @@ class RiskAnalysisResponse(BaseModel):
     record_id: str
     risk_score: RiskScoreResponse
     explanation: str
+
+
+class IngestionJobResponse(BaseModel):
+    """Represents one city ingestion schedule."""
+    city: str
+    cron: str
+
+
+class IngestionJobsResponse(BaseModel):
+    """Represents all city ingestion schedules."""
+    jobs: list[IngestionJobResponse]
+
+
+class JurisdictionProfileResponse(BaseModel):
+    """Represents system/access characteristics for one jurisdiction."""
+    jurisdiction: str
+    agency_place: str
+    system_type: str
+    access_model: str
+    modernization_level: str
+    notes: str
+
+
+class JurisdictionProfilesResponse(BaseModel):
+    """Represents all known jurisdiction profiles."""
+    profiles: list[JurisdictionProfileResponse]

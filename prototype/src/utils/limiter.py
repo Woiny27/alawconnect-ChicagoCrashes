@@ -1,6 +1,33 @@
+import asyncio
 import threading
 import time
 from typing import Callable
+
+
+class RateLimiter:
+    """Async fixed-window rate limiter for sequential scan loops."""
+
+    def __init__(self, rate_limit: float) -> None:
+        if rate_limit <= 0:
+            raise ValueError("rate_limit must be greater than 0")
+
+        self.rate_limit = float(rate_limit)
+        self._interval = 1.0 / self.rate_limit
+        self._lock = asyncio.Lock()
+        self._next_allowed_at = 0.0
+
+    async def wait(self) -> None:
+        """Wait until the next request slot is available."""
+        async with self._lock:
+            now = time.monotonic()
+            if self._next_allowed_at <= now:
+                self._next_allowed_at = now + self._interval
+                return
+
+            sleep_for = self._next_allowed_at - now
+            self._next_allowed_at += self._interval
+
+        await asyncio.sleep(sleep_for)
 
 
 class TokenBucketLimiter:

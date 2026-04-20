@@ -1,8 +1,18 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 from core.registry import PluginRegistry
 from core.pipeline import Pipeline
+from core.schedules import (
+    get_all_ingestion_jobs,
+    get_all_jurisdiction_profiles,
+    get_ingestion_job_for_city,
+)
 from storage.sqlite import SQLiteStorage
+from enrichment.contact_service import ContactService
 from api.schemas import (
+    IngestionJobResponse,
+    IngestionJobsResponse,
+    JurisdictionProfileResponse,
+    JurisdictionProfilesResponse,
     USGSEarthquakeAnalysisRequest,
     RiskAnalysisResponse,
     RiskScoreResponse,
@@ -19,6 +29,15 @@ risk_engine = RiskEngine()
 risk_explainer = RiskExplainer()
 
 
+def enrich_crash(crash, contact_service):
+    contact = contact_service.get_contact(crash["crash_id"])
+
+    crash["contact"] = contact
+    crash["has_contact"] = contact is not None
+
+    return crash
+
+
 @router.get("/health")
 def health():
     return {"status": "ok"}
@@ -27,6 +46,28 @@ def health():
 @router.get("/providers")
 def list_providers():
     return list(registry.providers.keys())
+
+
+@router.get("/ingestion/schedules", response_model=IngestionJobsResponse)
+def list_ingestion_schedules():
+    jobs = get_all_ingestion_jobs()
+    items = [IngestionJobResponse(city=city, cron=cron) for city, cron in jobs.items()]
+    return IngestionJobsResponse(jobs=items)
+
+
+@router.get("/ingestion/schedules/{city}", response_model=IngestionJobResponse)
+def get_ingestion_schedule(city: str):
+    try:
+        cron = get_ingestion_job_for_city(city)
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail="city schedule not found") from exc
+    return IngestionJobResponse(city=city.lower(), cron=cron)
+
+
+@router.get("/jurisdictions", response_model=JurisdictionProfilesResponse)
+def list_jurisdiction_profiles():
+    profiles = [JurisdictionProfileResponse(**row) for row in get_all_jurisdiction_profiles()]
+    return JurisdictionProfilesResponse(profiles=profiles)
 
 
 @router.post("/run/{provider_name}")

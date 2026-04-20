@@ -1,0 +1,49 @@
+column_name,data_type,description,nullable,example
+crash_record_id,string,Unique identifier for the crash record,false,c85240873b1b2563cb5e0c90e06afa99b74bb758cfa97d0e4aead9658bc8db31581d6de649e6e3344da3e9516a47e69091d3af97e29f02c6de064d9d31b9a81a
+crash_date_est_i,boolean,Estimated crash date indicator,true,
+crash_date,datetime,Date and time of the crash,false,2026-04-18T01:45:00.000
+posted_speed_limit,integer,Posted speed limit at crash location in mph,true,30
+traffic_control_device,string,Traffic control device present at crash location,true,TRAFFIC SIGNAL
+device_condition,string,Condition of traffic control device,true,FUNCTIONING PROPERLY
+weather_condition,string,Weather conditions at time of crash,true,RAIN
+lighting_condition,string,Lighting conditions at time of crash,true,DARKNESS LIGHTED ROAD
+first_crash_type,string,Type of first crash,true,REAR END
+trafficway_type,string,Type of trafficway,true,NOT DIVIDED
+lane_cnt,integer,Number of lanes,true,
+alignment,string,Road alignment,true,STRAIGHT AND LEVEL
+roadway_surface_cond,string,Roadway surface condition,true,WET
+road_defect,string,Type of road defect if any,true,NO DEFECTS
+report_type,string,Type of report,true,NOT ON SCENE (DESK REPORT)
+crash_type,string,Classification of crash type,false,NO INJURY / DRIVE AWAY
+intersection_related_i,boolean,Indicator if crash is intersection-related,true,
+private_property_i,boolean,Indicator if crash occurred on private property,true,
+hit_and_run_i,boolean,Indicator if crash is a hit-and-run,true,
+damage,string,Damage level or estimated damage amount,true,OVER $1500
+date_police_notified,datetime,Date and time police were notified,true,2026-04-18T02:00:00.000
+prim_contributory_cause,string,Primary contributing cause of crash,true,UNABLE TO DETERMINE
+sec_contributory_cause,string,Secondary contributing cause of crash,true,NOT APPLICABLE
+street_no,string,Street number,true,7100
+street_direction,string,Street direction (N S E W),true,S
+street_name,string,Street name,true,WESTERN AVE
+beat_of_occurrence,string,Police beat where crash occurred,true,832
+photos_taken_i,boolean,Indicator if photos were taken,true,
+statements_taken_i,boolean,Indicator if statements were taken,true,
+dooring_i,boolean,Indicator if dooring incident,true,
+work_zone_i,boolean,Indicator if crash occurred in work zone,true,
+work_zone_type,string,Type of work zone,true,
+workers_present_i,boolean,Indicator if workers were present,true,
+num_units,integer,Number of units involved in crash,true,2
+most_severe_injury,string,Most severe injury classification,true,NO INDICATION OF INJURY
+injuries_total,integer,Total number of injuries,true,0
+injuries_fatal,integer,Number of fatal injuries,true,0
+injuries_incapacitating,integer,Number of incapacitating injuries,true,0
+injuries_non_incapacitating,integer,Number of non-incapacitating injuries,true,0
+injuries_reported_not_evident,integer,Number of injuries reported but not evident,true,0
+injuries_no_indication,integer,Number of injuries with no indication,true,3
+injuries_unknown,integer,Number of unknown injuries,true,0
+crash_hour,integer,Hour of crash (0-23),true,1
+crash_day_of_week,integer,Day of week (0-6 or 1-7),true,7
+crash_month,integer,Month of crash (1-12),true,4
+latitude,decimal,Latitude coordinate of crash location,false,41.7646089122
+longitude,decimal,Longitude coordinate of crash location,false,-87.6833870533
+location,string,Location in WKT POINT format,false,POINT (-87.683387053281 41.764608912236)

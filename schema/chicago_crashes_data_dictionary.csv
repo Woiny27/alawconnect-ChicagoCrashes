@@ -1,0 +1,49 @@
+Column_Name,Description,API_Field_Name,Data_Type
+CRASH_RECORD_ID,This number can be used to link to the same crash in the Vehicles and People datasets. This number also serves as a unique ID in this dataset.,crash_record_id,Text
+CRASH_DATE_EST_I,Crash date estimated by desk officer or reporting party (only used when crash is reported days later).,crash_date_est_i,Text
+CRASH_DATE,Date and time of crash as entered by the reporting officer.,crash_date,Floating Timestamp
+POSTED_SPEED_LIMIT,Posted speed limit as determined by reporting officer.,posted_speed_limit,Number
+TRAFFIC_CONTROL_DEVICE,Traffic control device present at crash location as determined by reporting officer.,traffic_control_device,Text
+DEVICE_CONDITION,Condition of traffic control device as determined by reporting officer.,device_condition,Text
+WEATHER_CONDITION,Weather condition at time of crash as determined by reporting officer.,weather_condition,Text
+LIGHTING_CONDITION,Lighting condition at time of crash as determined by reporting officer.,lighting_condition,Text
+FIRST_CRASH_TYPE,Type of first collision in the crash.,first_crash_type,Text
+TRAFFICWAY_TYPE,Trafficway type as determined by reporting officer.,trafficway_type,Text
+LANE_CNT,Total number of through lanes (0 often means intersection).,lane_cnt,Number
+ALIGNMENT,Street alignment at crash location.,alignment,Text
+ROADWAY_SURFACE_COND,Road surface condition as determined by reporting officer.,roadway_surface_cond,Text
+ROAD_DEFECT,Road defects noted by reporting officer.,road_defect,Text
+REPORT_TYPE,Administrative report type (AT SCENE AT DESK AMENDED).,report_type,Text
+CRASH_TYPE,Classification of crash type.,crash_type,Text
+INTERSECTION_RELATED_I,Indicator if crash is intersection-related.,intersection_related_i,Text
+PRIVATE_PROPERTY_I,Indicator if crash occurred on private property.,private_property_i,Text
+HIT_AND_RUN_I,"Y" if hit-and-run.,hit_and_run_i,Text
+DAMAGE,Damage level or estimated damage amount.,damage,Text
+DATE_POLICE_NOTIFIED,Date and time police were notified.,date_police_notified,Floating Timestamp
+PRIM_CONTRIBUTORY_CAUSE,Primary contributory cause determined by officer.,prim_contributory_cause,Text
+SEC_CONTRIBUTORY_CAUSE,Secondary contributory cause.,sec_contributory_cause,Text
+STREET_NO,Street number.,street_no,Text
+STREET_DIRECTION,Street direction (N S E W).,street_direction,Text
+STREET_NAME,Street where crash occurred.,street_name,Text
+BEAT_OF_OCCURRENCE,Police beat.,beat_of_occurrence,Text
+PHOTOS_TAKEN_I,Indicator if photos were taken.,photos_taken_i,Text
+STATEMENTS_TAKEN_I,Indicator if statements were taken.,statements_taken_i,Text
+DOORING_I,Indicator if dooring incident.,dooring_i,Text
+WORK_ZONE_I,Indicator if crash occurred in work zone.,work_zone_i,Text
+WORK_ZONE_TYPE,Type of work zone.,work_zone_type,Text
+WORKERS_PRESENT_I,Indicator if workers were present.,workers_present_i,Text
+NUM_UNITS,Number of units involved in crash.,num_units,Number
+CRASH_HOUR,Hour of the crash (derived).,crash_hour,Number
+CRASH_DAY_OF_WEEK,Day of week (1=Sunday).,crash_day_of_week,Number
+CRASH_MONTH,Month of crash.,crash_month,Number
+MOST_SEVERE_INJURY,Worst injury sustained in the crash.,most_severe_injury,Text
+INJURIES_TOTAL,Total number of injuries.,injuries_total,Number
+INJURIES_FATAL,Number of fatal injuries.,injuries_fatal,Number
+INJURIES_INCAPACITATING,Number of incapacitating injuries.,injuries_incapacitating,Number
+INJURIES_NON_INCAPACITATING,Number of non-incapacitating injuries.,injuries_non_incapacitating,Number
+INJURIES_REPORTED_NOT_EVIDENT,Number of injuries reported but not evident.,injuries_reported_not_evident,Number
+INJURIES_NO_INDICATION,Number of injuries with no indication.,injuries_no_indication,Number
+INJURIES_UNKNOWN,Number of unknown injuries.,injuries_unknown,Number
+LATITUDE,Approximate latitude of crash.,latitude,Number
+LONGITUDE,Approximate longitude of crash.,longitude,Number
+LOCATION,Location in WKT POINT format.,location,Text

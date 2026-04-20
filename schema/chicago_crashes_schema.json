@@ -1,0 +1,290 @@
+[
+  {
+    "column_name": "CRASH_RECORD_ID",
+    "description": "Unique ID for the crash. Links to Vehicles and People tables.",
+    "api_field": "crash_record_id",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "CRASH_DATE_EST_I",
+    "description": "Crash date estimated by desk officer or reporting party (only used when crash is reported days later).",
+    "api_field": "crash_date_est_i",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "CRASH_DATE",
+    "description": "Date and time of crash as entered by the reporting officer.",
+    "api_field": "crash_date",
+    "data_type": "Floating Timestamp"
+  },
+  {
+    "column_name": "POSTED_SPEED_LIMIT",
+    "description": "Posted speed limit as determined by reporting officer.",
+    "api_field": "posted_speed_limit",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "TRAFFIC_CONTROL_DEVICE",
+    "description": "Traffic control device present at crash location as determined by reporting officer.",
+    "api_field": "traffic_control_device",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "DEVICE_CONDITION",
+    "description": "Condition of traffic control device as determined by reporting officer.",
+    "api_field": "device_condition",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "WEATHER_CONDITION",
+    "description": "Weather condition at time of crash as determined by reporting officer.",
+    "api_field": "weather_condition",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "LIGHTING_CONDITION",
+    "description": "Lighting condition at time of crash as determined by reporting officer.",
+    "api_field": "lighting_condition",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "FIRST_CRASH_TYPE",
+    "description": "Type of first collision in the crash.",
+    "api_field": "first_crash_type",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "TRAFFICWAY_TYPE",
+    "description": "Trafficway type as determined by reporting officer.",
+    "api_field": "trafficway_type",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "LANE_CNT",
+    "description": "Total number of through lanes (0 often means intersection).",
+    "api_field": "lane_cnt",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "ALIGNMENT",
+    "description": "Street alignment at crash location.",
+    "api_field": "alignment",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "ROADWAY_SURFACE_COND",
+    "description": "Road surface condition as determined by reporting officer.",
+    "api_field": "roadway_surface_cond",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "ROAD_DEFECT",
+    "description": "Road defects noted by reporting officer.",
+    "api_field": "road_defect",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "REPORT_TYPE",
+    "description": "Administrative report type (AT SCENE, AT DESK, AMENDED).",
+    "api_field": "report_type",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "CRASH_TYPE",
+    "description": "Classification of crash type.",
+    "api_field": "crash_type",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "INTERSECTION_RELATED_I",
+    "description": "Indicator if crash is intersection-related.",
+    "api_field": "intersection_related_i",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "PRIVATE_PROPERTY_I",
+    "description": "Indicator if crash occurred on private property.",
+    "api_field": "private_property_i",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "HIT_AND_RUN_I",
+    "description": "Y if hit-and-run.",
+    "api_field": "hit_and_run_i",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "DAMAGE",
+    "description": "Damage level or estimated damage amount.",
+    "api_field": "damage",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "DATE_POLICE_NOTIFIED",
+    "description": "Date and time police were notified.",
+    "api_field": "date_police_notified",
+    "data_type": "Floating Timestamp"
+  },
+  {
+    "column_name": "PRIM_CONTRIBUTORY_CAUSE",
+    "description": "Primary contributory cause determined by officer.",
+    "api_field": "prim_contributory_cause",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "SEC_CONTRIBUTORY_CAUSE",
+    "description": "Secondary contributory cause.",
+    "api_field": "sec_contributory_cause",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "STREET_NO",
+    "description": "Street number.",
+    "api_field": "street_no",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "STREET_DIRECTION",
+    "description": "Street direction (N, S, E, W).",
+    "api_field": "street_direction",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "STREET_NAME",
+    "description": "Street where crash occurred.",
+    "api_field": "street_name",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "BEAT_OF_OCCURRENCE",
+    "description": "Police beat.",
+    "api_field": "beat_of_occurrence",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "PHOTOS_TAKEN_I",
+    "description": "Indicator if photos were taken.",
+    "api_field": "photos_taken_i",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "STATEMENTS_TAKEN_I",
+    "description": "Indicator if statements were taken.",
+    "api_field": "statements_taken_i",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "DOORING_I",
+    "description": "Indicator if dooring incident.",
+    "api_field": "dooring_i",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "WORK_ZONE_I",
+    "description": "Indicator if crash occurred in work zone.",
+    "api_field": "work_zone_i",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "WORK_ZONE_TYPE",
+    "description": "Type of work zone.",
+    "api_field": "work_zone_type",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "WORKERS_PRESENT_I",
+    "description": "Indicator if workers were present.",
+    "api_field": "workers_present_i",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "NUM_UNITS",
+    "description": "Number of units involved in crash.",
+    "api_field": "num_units",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "CRASH_HOUR",
+    "description": "Hour of the crash (0-23) derived from crash date.",
+    "api_field": "crash_hour",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "CRASH_DAY_OF_WEEK",
+    "description": "Day of week (0-6 or 1-7).",
+    "api_field": "crash_day_of_week",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "CRASH_MONTH",
+    "description": "Month of crash (1-12).",
+    "api_field": "crash_month",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "MOST_SEVERE_INJURY",
+    "description": "Worst injury in the crash (FATAL, INCAPACITATING INJURY, etc.).",
+    "api_field": "most_severe_injury",
+    "data_type": "Text"
+  },
+  {
+    "column_name": "INJURIES_TOTAL",
+    "description": "Total number of injuries.",
+    "api_field": "injuries_total",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "INJURIES_FATAL",
+    "description": "Number of fatal injuries.",
+    "api_field": "injuries_fatal",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "INJURIES_INCAPACITATING",
+    "description": "Number of incapacitating injuries.",
+    "api_field": "injuries_incapacitating",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "INJURIES_NON_INCAPACITATING",
+    "description": "Number of non-incapacitating injuries.",
+    "api_field": "injuries_non_incapacitating",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "INJURIES_REPORTED_NOT_EVIDENT",
+    "description": "Number of injuries reported but not evident.",
+    "api_field": "injuries_reported_not_evident",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "INJURIES_NO_INDICATION",
+    "description": "Number of injuries with no indication.",
+    "api_field": "injuries_no_indication",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "INJURIES_UNKNOWN",
+    "description": "Number of unknown injuries.",
+    "api_field": "injuries_unknown",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "LATITUDE",
+    "description": "Approximate latitude of crash location.",
+    "api_field": "latitude",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "LONGITUDE",
+    "description": "Approximate longitude of crash location.",
+    "api_field": "longitude",
+    "data_type": "Number"
+  },
+  {
+    "column_name": "LOCATION",
+    "description": "Location in WKT POINT format.",
+    "api_field": "location",
+    "data_type": "Text"
+  }
+]
