@@ -103,7 +103,7 @@ class Vault:
         if var in self._cache:
             return self._cache[var]
         value = os.environ.get(var)
-        if not value:
+        if value is None:
             raise KeyError(
                 f"Vault: credential '{var}' not found. "
                 f"Set the environment variable or add it to your .env file."
