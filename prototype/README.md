@@ -46,6 +46,7 @@ pytest
 ## 📊 Available Providers
 
 - `chicago_crashes` - Chicago traffic crash data
+- `nyc_provider` - NYC crash data via Socrata API (`aiohttp`)
 - `usgs_earthquakes` - USGS earthquake data
 - (Extend with custom providers)
 

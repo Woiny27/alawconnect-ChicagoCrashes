@@ -2,6 +2,7 @@ requests
 pandas
 fastapi
 httpx
+aiohttp
 uvicorn
 pytest
 python-dotenv
