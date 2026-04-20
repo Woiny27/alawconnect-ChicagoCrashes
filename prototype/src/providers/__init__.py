@@ -4,6 +4,7 @@ __all__ = [
 	"DetroitProvider",
 	"LAPDProvider",
 	"LegacyPortalProvider",
+	"MissouriProvider",
 	"NYCProvider",
 	"SequentialWorkerProvider",
 ]
@@ -22,6 +23,10 @@ def __getattr__(name: str) -> Any:
 		from .legacy_portal_provider import LegacyPortalProvider
 
 		return LegacyPortalProvider
+	if name == "MissouriProvider":
+		from .missouri_provider import MissouriProvider
+
+		return MissouriProvider
 	if name == "NYCProvider":
 		from .nyc_provider import NYCProvider
 

@@ -15,13 +15,17 @@ jurisdictions:
   st_louis_missouri_mshp:
     agency: Missouri State Highway Patrol
     providers:
-      legacy_portal:
-        search_url: ""
+      mshp:
+        troop: C
+        search_url: https://www.mshp.dps.missouri.gov/HP68/AccidentForm
         tokens_per_second: 2
+        timeout_seconds: 30
     manual_test_seeds:
       - report_id: "250111396"
+        troop: E
         note: User-provided seed (Mar 15, 2026; New Madrid, Troop E).
       - report_id: "250201258"
+        troop: E
         note: User-provided seed in active 2502xxxxx range.
 
   detroit_arcgis:
