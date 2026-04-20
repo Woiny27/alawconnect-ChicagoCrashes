@@ -1,6 +1,9 @@
 import json
+import logging
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
+
+_log = logging.getLogger(__name__)
 
 
 def load_contacts(contacts_json: Path) -> List[Dict[str, Any]]:
@@ -38,9 +41,19 @@ def merge_crashes_with_contacts(
     Returns:
         A new list of merged dicts, one per crash row.
     """
-    contact_map: Dict[str, Dict[str, Any]] = {
-        str(row.get(contact_key, "")): row for row in contacts
-    }
+    contact_map: Dict[str, Dict[str, Any]] = {}
+    for row in contacts:
+        key_value = str(row.get(contact_key, "")).strip()
+        if not key_value:
+            _log.warning("Contact row skipped: missing or empty '%s' field", contact_key)
+            continue
+        if key_value in contact_map:
+            _log.warning(
+                "Duplicate contact key '%s' for field '%s'; later entry overwrites earlier one",
+                key_value,
+                contact_key,
+            )
+        contact_map[key_value] = row
 
     merged: List[Dict[str, Any]] = []
     for crash in crashes:

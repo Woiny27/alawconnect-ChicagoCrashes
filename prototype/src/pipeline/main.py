@@ -18,6 +18,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
+from typing import Any, Dict, List
 
 from src.providers.chicago import ChicagoProvider, build_rd_no_map
 from src.utils.data_merger import load_contacts, merge_crashes_with_contacts
@@ -47,7 +48,7 @@ def run(limit: int = _DEFAULT_LIMIT, output_path: Path = _OUTPUT_PATH) -> int:
     rd_map = build_rd_no_map(crashes)
     print(f"      → mapped {len(rd_map)} rd_no values")
 
-    contacts: list = []
+    contacts: List[Dict[str, Any]] = []
     if _CONTACTS_PATH.exists():
         print(f"[3/4] Loading contacts from {_CONTACTS_PATH} …")
         contacts = load_contacts(_CONTACTS_PATH)
