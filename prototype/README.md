@@ -101,9 +101,10 @@ Notes:
 
 ## Contacts Data
 
-Real contact numbers (phone numbers, names, addresses) are stored in a private Google Sheet:
+Real contact numbers (phone numbers, names, addresses) are stored in private Google Sheets:
 
 - Chicago Crashes with Contacts: https://docs.google.com/spreadsheets/d/1HeSWYoEPxpE9bxrfMF_YMqCYYEm1QYNnwmTN9ljkgGg/edit?usp=drivesdk
+- Additional Crash Contacts Sheet: https://docs.google.com/spreadsheets/d/1IYBqja8wMxDZxDVCqNRgPqDm65yJJE6Vysd4ymFY6O8/edit?gid=0#gid=0
 
 Do not upload the raw sheet to GitHub due to privacy requirements.
 
