@@ -104,10 +104,61 @@ def _make_response(status: int, text: str):
     return resp
 
 
+# ---------------------------------------------------------------------------
+# parse_reports() — listing mode
+# ---------------------------------------------------------------------------
+
+LISTING_HTML = """
+<html><body>
+  <table>
+    <tr>
+      <td><a href="/HP68/details?id=250111396" title="Details for Report 250111396">250111396</a></td>
+    </tr>
+    <tr>
+      <td><a href="/HP68/details?id=250201258" title="Details for Report 250201258">250201258</a></td>
+    </tr>
+    <tr>
+      <td><a href="/HP68/other" title="unrelated link">Other</a></td>
+    </tr>
+  </table>
+</body></html>
+"""
+
+
+class TestParseReports:
+    def setup_method(self):
+        self.p = MissouriProvider(troop="C")
+
+    def test_extracts_report_ids(self):
+        rows = self.p.parse_reports(LISTING_HTML)
+        ids = [r["crash_join_id"] for r in rows]
+        assert "250111396" in ids
+        assert "250201258" in ids
+
+    def test_ignores_unrelated_links(self):
+        rows = self.p.parse_reports(LISTING_HTML)
+        assert len(rows) == 2
+
+    def test_row_has_source_and_agency(self):
+        rows = self.p.parse_reports(LISTING_HTML)
+        assert rows[0]["source"] == "mshp_troop_c"
+        assert "Troop C" in rows[0]["agency"]
+
+    def test_empty_html_returns_empty(self):
+        assert self.p.parse_reports("<html><body></body></html>") == []
+
+
 class TestFetch:
-    def test_fetch_empty_ids_returns_empty(self):
+    def test_fetch_empty_ids_uses_listing_mode(self):
+        """No accident_ids → falls back to fetch_troop_data."""
         p = MissouriProvider()
-        assert p.fetch(limit=5) == []
+        with patch("aiohttp.ClientSession") as mock_cls:
+            session = MagicMock()
+            mock_cls.return_value.__aenter__ = AsyncMock(return_value=session)
+            mock_cls.return_value.__aexit__ = AsyncMock(return_value=False)
+            session.get.return_value = _make_response(200, LISTING_HTML)
+            rows = p.fetch(limit=5)
+        assert len(rows) == 2  # LISTING_HTML has 2 valid report links
 
     def test_fetch_with_not_found_skips_row(self):
         p = MissouriProvider(accident_ids=["250111396"])

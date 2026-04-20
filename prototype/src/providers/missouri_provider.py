@@ -33,6 +33,9 @@ TROOP_COVERAGE: Dict[str, str] = {
 PORTAL_BASE = "https://www.mshp.dps.missouri.gov"
 SEARCH_URL = f"{PORTAL_BASE}/HP68/AccidentForm"
 
+# Troop-wide listing endpoint (user-supplied URL, shorter .mo.gov alias).
+TROOP_SEARCH_URL = "https://www.mshp.dps.mo.gov/HP68/SearchAction"
+
 
 class MissouriProvider(BaseProvider):
     """
@@ -42,6 +45,15 @@ class MissouriProvider(BaseProvider):
     -----
     provider = MissouriProvider(troop="C", tokens_per_second=2)
     rows = provider.fetch(limit=10)
+
+    Two fetch modes
+    ---------------
+    1. **Listing mode** (default when no accident_ids supplied):
+       ``fetch_troop_data(troop_id)`` — GET /SearchAction?searchTroop=C
+       Returns every report link found in the MSHP results table.
+
+    2. **Lookup mode** (when accident_ids are supplied):
+       ``fetch(limit)`` → iterates known IDs via POST to AccidentForm.
 
     Each returned row conforms to the crash_join_id schema:
         {
@@ -79,15 +91,75 @@ class MissouriProvider(BaseProvider):
     # ------------------------------------------------------------------
 
     def fetch(self, limit: Optional[int] = None) -> List[Dict[str, Any]]:
-        """Sync wrapper — runs the async lookup loop and returns normalized rows."""
-        ids = self.default_ids[:limit] if limit else self.default_ids
-        if not ids:
-            return []
-        rows = asyncio.run(self.check_ids(ids))
+        """
+        Sync entrypoint.
+
+        * If accident_ids were supplied at construction → lookup mode (POST per ID).
+        * Otherwise → listing mode (GET troop search, returns all found report links).
+        """
+        if self.default_ids:
+            ids = self.default_ids[:limit] if limit else self.default_ids
+            rows = asyncio.run(self.check_ids(ids))
+        else:
+            rows = asyncio.run(self.fetch_troop_data(self.troop))
+            if limit:
+                rows = rows[:limit]
         return [row for row in rows if isinstance(row, dict)]
 
     # ------------------------------------------------------------------
-    # Async lookup helpers
+    # Listing mode — troop-wide search (user-supplied approach)
+    # ------------------------------------------------------------------
+
+    async def fetch_troop_data(self, troop_id: Optional[str] = None) -> List[Dict[str, Any]]:
+        """
+        Fetch recent accident reports listed for a specific MSHP Troop.
+
+        Issues GET /SearchAction?searchTroop=<troop_id> and parses the
+        results table for report-ID links.
+        """
+        import aiohttp
+
+        troop_id = (troop_id or self.troop).upper().strip()
+        params = {"searchTroop": troop_id}
+        timeout = aiohttp.ClientTimeout(total=self.timeout_seconds)
+
+        async with aiohttp.ClientSession(timeout=timeout) as session:
+            await self.limiter.wait()
+            async with session.get(TROOP_SEARCH_URL, params=params) as resp:
+                if resp.status != 200:
+                    return []
+                html = await resp.text()
+
+        return self.parse_reports(html)
+
+    def parse_reports(self, html: str) -> List[Dict[str, Any]]:
+        """
+        Extract Incident IDs from the MSHP search results table.
+
+        Targets ``<a>`` elements whose ``title`` attribute contains the phrase
+        "details for report" — the pattern used by the MSHP listing portal.
+        """
+        soup = BeautifulSoup(html, "html.parser")
+        reports: List[Dict[str, Any]] = []
+
+        for link in soup.find_all("a", href=True):
+            title = str(link.get("title", "")).lower()
+            if "details for report" in title:
+                report_id = link.get_text(strip=True)
+                if report_id:
+                    reports.append({
+                        "crash_join_id": report_id,
+                        "source": self.source,
+                        "agency": self.agency,
+                        "troop": self.troop,
+                        "contact_found": False,  # listing page; no party detail yet
+                        "status": "Found",
+                    })
+
+        return reports
+
+    # ------------------------------------------------------------------
+    # Lookup mode — individual report POST
     # ------------------------------------------------------------------
 
     async def check_ids(self, accident_ids: Iterable[str]) -> List[Dict[str, Any]]:
