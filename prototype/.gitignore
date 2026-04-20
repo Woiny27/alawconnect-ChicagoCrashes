@@ -55,6 +55,10 @@ htmlcov/
 data/*.csv
 data/*.json
 !data/.gitkeep
+!data/contacts_template.csv
+!data/crash_contacts.csv
+!data/merged_output.csv
+data_private/
 
 # Logs
 *.log

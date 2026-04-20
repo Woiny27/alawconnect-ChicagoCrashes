@@ -23,7 +23,7 @@ def main() -> None:
     contacts_path = root / "data" / "contacts_template.csv"
     contacts = load_contacts(contacts_path) if contacts_path.exists() else []
 
-    merged = merge_crashes_with_contacts(crashes, contacts, key="rd")
+    merged = merge_crashes_with_contacts(crashes, contacts, key="crash_join_id")
 
     out_path = root / "data" / "merged_output.csv"
     write_csv(out_path, merged)

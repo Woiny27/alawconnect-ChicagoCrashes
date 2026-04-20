@@ -9,7 +9,7 @@ def load_contacts(contacts_csv: Path) -> List[Dict[str, str]]:
 
 
 def merge_crashes_with_contacts(
-    crashes: List[Dict[str, str]], contacts: List[Dict[str, str]], key: str = "rd"
+    crashes: List[Dict[str, str]], contacts: List[Dict[str, str]], key: str = "crash_join_id"
 ) -> List[Dict[str, str]]:
     contact_map = {row.get(key, ""): row for row in contacts}
 

@@ -69,6 +69,24 @@ class CustomProvider(BaseProvider):
         pass
 ```
 
+## 🌐 WorkerProvider Rotation (Rate-Limit Mitigation)
+
+`ChicagoCrashesProvider` now uses a `WorkerProvider` for API calls and can rotate
+user-agents and proxies between requests.
+
+Set these optional environment variables before running the pipeline:
+
+```bash
+export WORKER_USER_AGENTS="Mozilla/5.0 (...Chrome...),Mozilla/5.0 (...Safari...)"
+export WORKER_PROXIES="http://proxy1:8080,http://proxy2:8080"
+export WORKER_MAX_ATTEMPTS="4"
+```
+
+Notes:
+- `WORKER_USER_AGENTS`: comma-separated user-agent strings.
+- `WORKER_PROXIES`: comma-separated proxy URLs used round-robin.
+- `WORKER_MAX_ATTEMPTS`: retries for HTTP 429 responses.
+
 ## Contacts Data
 
 Real contact numbers (phone numbers, names, addresses) are stored in a private Google Sheet:
@@ -77,4 +95,16 @@ Real contact numbers (phone numbers, names, addresses) are stored in a private G
 
 Do not upload the raw sheet to GitHub due to privacy requirements.
 
-The prototype can merge public crash data with the local contacts file using the `rd` column as the join key.
+The prototype can merge public crash data with the local contacts file using the `crash_join_id` column as the join key.
+
+Safe local merge workflow:
+1. Download the private sheet as CSV and name it contacts.csv.
+2. Put contacts.csv in prototype/data.
+3. Confirm contacts has crash_join_id. Older files with crash_id or rd are still accepted.
+4. Run from prototype: python -m src.pipeline.merger.
+5. Read merged results in prototype/data/merged_output.csv.
+
+Privacy guardrails:
+- Keep real contact files local only.
+- Never commit contacts.csv or files from prototype/data_private.
+- Use only fake data in shared templates such as contacts_template.csv.

@@ -1,0 +1,6 @@
+crash_join_id,driver_name,driver_phone,owner_name,owner_phone,insurance_company,policy_number,notes
+CR100001,Alice Carter,555-201-1001,Robert Carter,555-201-9001,Acme Mutual,PLCY-1001,Demo record for UI testing
+CR100002,Brandon Lee,555-201-1002,Sandra Lee,555-201-9002,NorthStar Insurance,PLCY-1002,Fake claim pending review
+CR100003,Carla Nguyen,555-201-1003,Minh Nguyen,555-201-9003,Metro Shield,PLCY-1003,Use for CSV validation tests
+CR100004,Daniel Ortiz,555-201-1004,Elena Ortiz,555-201-9004,Prairie Auto,PLCY-1004,Synthetic row no real person
+CR100005,Evelyn Brooks,555-201-1005,Thomas Brooks,555-201-9005,Lakeview Casualty,PLCY-1005,Placeholder for pipeline dry run
