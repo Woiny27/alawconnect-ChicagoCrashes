@@ -1,0 +1,23 @@
+[
+  {
+    "rd_no": "JF100001",
+    "name": "Alice Johnson",
+    "phone": "312-555-0101",
+    "email": "alice@example.com",
+    "address": "100 N Michigan Ave, Chicago, IL 60601"
+  },
+  {
+    "rd_no": "JF100002",
+    "name": "Bob Martinez",
+    "phone": "312-555-0102",
+    "email": "bob@example.com",
+    "address": "200 S Wacker Dr, Chicago, IL 60606"
+  },
+  {
+    "rd_no": "JF100003",
+    "name": "Carol Smith",
+    "phone": "773-555-0103",
+    "email": "carol@example.com",
+    "address": "3400 N Lake Shore Dr, Chicago, IL 60657"
+  }
+]
