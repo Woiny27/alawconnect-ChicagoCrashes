@@ -151,6 +151,7 @@ API Endpoints
 Real contact numbers (phone numbers, names, addresses) are available in the private Google Sheet:
 
 - [Chicago Crashes with Contacts](https://docs.google.com/spreadsheets/d/1HeSWYoEPxpE9bxrfMF_YMqCYYEm1QYNnwmTN9ljkgGg/edit?usp=drivesdk)
+- [Chicago Crashes Data Sheet](https://docs.google.com/spreadsheets/d/1IYBqja8wMxDZxDVCqNRgPqDm65yJJE6Vysd4ymFY6O8/edit?gid=0#gid=0)
 
 Do not upload the raw sheet to GitHub due to privacy reasons.
 
